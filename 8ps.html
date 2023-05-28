@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
+  <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
+  <title> 8 PS</title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+    .Logo {
+      width: 260px;
+    }
+
+    * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    body {
+      background: white;
+      overflow-x: hidden;
+    }
+
+    /* logo */
+
+    .logo {
+      width: 100%;
+      height: 100%;
+      left: 70%;
+      top: -9vh;
+      position: relative;
+    }
+
+    /* Container da navbar */
+
+    .Conteiner {
+      width: 260px;
+      margin: 0px auto;
+      margin-right: 100%;
+    }
+
+    .colors {
+      background: #2a7ca3;
+    }
+
+    /* Menu */
+
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      outline: 0;
+    }
+
+    .Vai-e-Volta-Menu {
+      min-width: 260px;
+      float: left;
+      position: relative;
+      box-shadow: 0 30px 50px #2a7ca3;
+    }
+
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
+    .Vai-e-Volta-Menu .Menu-Baixo {
+      width: 100%;
+      height: 50px;
+      padding-left: 22px;
+      float: left;
+      font-weight: 600;
+      color: #f0f0f0;
+      background: #2a7ca3;
+    }
+
+    .Vai-e-Volta-Menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .Vai-e-Volta-Menu ul li a {
+      width: 100%;
+      padding: 14px 22px;
+      float: left;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-size: 13px;
+      background: #2a7ca3;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      transition: color .2s linear, background .2s linear;
+      -moz-transition: color .2s linear, background .2s linear;
+      -webkit-transition: color .2s linear, background .2s linear;
+      transition: color .2s linear, background .2s linear;
+    }
+
+    .Vai-e-Volta-Menu>ul>li.active>a,
+    .Vai-e-Volta-Menu>ul>li:hover>a {
+      color: #fff;
+      background: #2986b1;
+    }
+
+    .Vai-e-Volta-Menu ul li a i {
+      width: 34px;
+      float: left;
+      line-height: 18px;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .Vai-e-Volta-Menu .submenu-indicator {
+      float: right;
+      right: 22px;
+      position: absolute;
+      line-height: 19px;
+      font-size: 20px;
+      transition: transform .3s linear;
+      -moz-transition: transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      -ms-transition: transform .3s linear;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
+
+    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
+
+    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu,
+    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
+      width: 100%;
+      display: none;
+      position: static;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu li {
+      clear: both;
+      width: 100%;
+    }
+
+    /* Cor de dentro da categoria */
+
+    .Vai-e-Volta-Menu ul ul.submenu li a {
+      width: 100%;
+      float: left;
+      font-size: 11px;
+      background: #2986b1;
+      border: black;
+      position: relative;
+
+      -o-transition: border .2s linear;
+      -moz-transition: border .2s linear;
+      -webkit-transition: border .2s linear;
+      transition: border .2s linear;
+    }
+
+
+    .Titulo8PS {
+      left: 25%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 10vh;
+    }
+
+
+
+    .Img8ps {
+      width: 950pX;
+    }
+
+    .Img8psMar {
+      align-items: center;
+      left: 10%;
+      position: relative;
+      top: 10VH;
+
+
+    }
+
+
+
+    .SubTitulo8PS {
+      left: 25%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 10VH;
+    }
+
+    .p8PS {
+      left: 25%;
+      margin-right: 50%;
+      position: relative;
+      top: 10VH;
+    }
+
+    .p8PS2 {
+      left: 10%;
+      margin-right: 35%;
+      position: relative;
+      top: 10VH;
+    }
+
+
+
+    .img8ps2 {
+      left: 35%;
+
+      top: 10VH;
+      position: relative;
+    }
+
+    .img8psC {
+      width: 550px;
+      position: relative;
+    }
+
+    /*         titulo            */
+
+
+    .Titulo28PS {
+      left: 38%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 10VH;
+    }
+
+    /* Botão*/
+
+    .voltaPS {
+      left: 71%;
+      color: white;
+      right: 25.4%;
+      border-radius: 3em;
+
+      position: relative;
+      text-decoration: none;
+
+      font-weight: 700;
+      font-size: 1rem;
+      top: 10VH;
+
+
+    }
+
+    .voltar2PS {
+      color: white;
+      background-color: rgb(57, 127, 233);
+      border: 2px solid rgb(57, 127, 233);
+      border-radius: 3em;
+
+      width: 100px;
+      right: 100%;
+    }
+
+    @media screen and (max-width: 1300px) {
+      .Img8ps {
+        width: 500px;
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
+
+      .SubTitulo8PS,
+      .p8PS {
+        margin-left: 100%;
+        margin-right: 10%;
+      }
+
+      .Titulo8PS,
+      .SubTitulo8PS,
+      .p8PS,
+      .Titulo28PS {
+        margin-left: 10%;
+        margin-right: 30%;
+      }
+
+      .img8psC {
+        width: 300px;
+      }
+
+      .Titulo8PS {
+        left: 10VH;
+      }
+      .voltaPS{
+        margin-bottom: 20%;
+        left: 80%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .Titulo8PS,
+      .SubTitulo8PS,
+      .p8PS,
+      .Titulo28PS {
+        left: 5%;
+        margin-left: 0;
+        margin-right: 10%;
+      }
+
+      .Img8ps,
+      .img8psC {
+        width: 100%;
+      }
+
+      .voltaPS {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+      }
+
+      .img8psC {
+        width: 300px;
+      }
+
+      .Img8ps {
+        width: 500px;
+      }
+
+      .voltaPS {
+        left: 130%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .voltaPS {
+        font-size: 0.8rem;
+      }
+
+      .Img8ps,
+      .img8psC {
+        width: 300px;
+      }
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+  <!--   Codigo tabela canto -->
+  <div class="Conteiner">
+
+    <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+
+      <div class="header"><img src="logoC.jpeg" class="Logo"> </div>
+      <ul>
+        <ul>
+
+
+          <li><a href="TelaPrincipal.HTML"></i>Inicio </a></li>
+          <li><a href="#"></i>Categorias </a>
+            <ul class="submenu">
+              <li><a href="index.HTML" class="Categoria">
+                  Marketing Digital </a></li>
+              <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
+              <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
+              <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
+              <li><a href="SEO.html" class="Categoria"> SEO </a></li>
+            </ul>
+          </li>
+
+          <li><a href="persona.html"></i>Persona </a></li>
+          <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+          <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+          <li><a href="contato.html"></i>Entre em Contato</a></li>
+        </ul>
+        <div class="Menu-Baixo"> </div>
+    </div>
+  </div>
+  <!--   Codigo tela marketing -->
+
+
+  <!--   tITULO -->
+
+
+  <div class="Titulo8PS">
+    <H3> Entenda os 4Ps do Marketing</h3>
+  </div>
+
+  </br>
+  <DIV class="p8PS2">
+    <p>
+      Para melhor entendimento e aplicação dos 8Ps do marketing digital futuramente, será necessário entender o que é o
+      mix de
+      marketing ou também conhecido como os 4Ps. </br>
+
+      Caso você não conheça os 4Ps agora é o momento para entender o que são e o papel fundamental que eles têm nas
+      estratégias de marketing
+    </p>
+  </DIV>
+  </br>
+
+  <DIV class="Img8psMar">
+    <img src="img1.png" class="Img8ps">
+  </DIV>
+  </br>
+  <DIV class="p8PS">
+    <p>
+      A seguir os significados de cada um deles.
+    </p>
+  </DIV>
+
+  </br>
+  <div class="SubTitulo8PS">
+    <H5> 1. Produto </h5>
+  </div>
+
+  </br>
+
+  <DIV class="p8PS">
+    <p>
+      O produto é o essencial, o ponto inicial para tudo que virá a seguir, podendo ser algo físico ou um serviço
+      ofertado. A equipe deve definir
+      as características do produto como: Nome, atributos, funções, ciclo de vida e seus diferenciais.
+    </p>
+  </DIV>
+
+
+  </br>
+  <div class="SubTitulo8PS">
+    <H5> 2. Preço </h5>
+  </div>
+
+  </br>
+
+  <DIV class="p8PS">
+    <p>
+      Etapa em que é decidida o quanto será cobrado pelo produto. Para que ele seja definido é preciso observar alguns
+      pontos, a média
+      que os concorrentes cobram, a percepção que as pessoas têm da marca, renda do público-alvo e ações para diferentes
+      tipos de clientes para que eles comprem o produto.
+
+    </p>
+  </DIV>
+
+  </br>
+  <div class="SubTitulo8PS">
+    <H5> 3. Praça </h5>
+  </div>
+
+  </br>
+  <DIV class="p8PS">
+    <p>
+      A praça é como e onde os produtos são inseridos no mercado, e a forma como o cliente chega até eles. Deve ser
+      observado a localização,
+      qual o tipo de estabelecimento e como deve ser feita a exposição dele no local. Caso seja um produto virtual
+      também há pontos a serem observados,
+      como o canal em que seu produto é procurado e a melhor exposição.
+    </p>
+  </DIV>
+
+  </br>
+  <div class="SubTitulo8PS">
+    <H5>4. Promoção </h5>
+  </div>
+
+  </br>
+  <DIV class="p8PS">
+    <p>
+      Muitos pensam que esse P tem a ver com desconto, liquidação, ofertas. </br>
+
+      Nos 4Ps ele significa como o produto ou serviço será promovido para que assim ele se torne conhecido e demonstre
+      agregar valor ao público. </br> </br>
+
+      Na promoção é feita as ações de marketing, outdoors, anúncios, conteúdos em redes sociais, entre outros. </br>
+      </br>
+
+      O marketing tradicional que utiliza os 4Ps funciona muito bem para certas estratégias, porém com um público cada
+      vez mais conectado,
+      foi visto uma forma de evoluir. E assim surgiram os novos Ps.
+
+
+    </p>
+  </DIV>
+
+  </br>
+  <div class="Titulo28PS">
+    <H3> Os 8Ps do Marketing Digital</h3>
+  </div>
+
+
+  </br>
+  <DIV class="p8PS">
+    <p>
+      Os 8Ps do Marketing Digital te auxiliarão a alavancar sua empresa, trazendo resultados e soluções inovadoras, a
+      metodologia é baseada no cenário atual,
+      uma evolução dos 4Ps do marketing tradicional,
+      com o consumidor cada vez mais adepto as tecnologias da atualidade os métodos foram desenvolvidos para que as
+      estratégias sejam eficientes e acessíveis.
+
+      </br> </br>
+
+      Nessa etapa são desenvolvidos os materiais, conteúdos, tudo que será utilizado para que as estratégias sejam
+      realizadas,
+      o material deve ser atrativo, para que a persona se interesse.
+  </DIV>
+
+  </br>
+
+
+  </br>
+
+  <DIV class="img8ps2">
+    <img src="img2.jpg" class="img8psC">
+  </DIV>
+  </br>
+
+  <DIV class="p8PS">
+    <p>
+      Entenda o que são os 8Ps do Marketing Digital:
+    </p>
+  </DIV>
+  </br>
+
+  <div class="SubTitulo8PS">
+    <H5>1. Pesquisa </h5>
+  </div>
+  </br>
+  <DIV class="p8PS">
+    <p>
+      O primeiro “P” significa pesquisa, está ligado as pesquisas feitas para compreender a persona, seu perfil ideal de
+      cliente. Dessa forma,
+      entenderá os consumidores, seus hábitos, desejos e necessidades, o que facilitará na escolha das estratégias para
+      utilizar.
+    </p>
+  </DIV>
+  </br>
+
+
+  <div class="SubTitulo8PS">
+    <H5>2. Planejamento </h5>
+  </div>
+  </br>
+  <DIV class="p8PS">
+    <p>
+      Deve-se ter uma meta, um objetivo claro, para que seja planejado o que e como será realizado,
+      no planejamento é importante observar a persona dessa estratégia e quais os interesses desse público.
+    </p>
+  </DIV>
+  </br>
+
+  <div class="SubTitulo8PS">
+    <H5>3. Produção </h5>
+  </div>
+  </br>
+  <DIV class="p8PS">
+    <p>
+      Nessa etapa são desenvolvidos os materiais, conteúdos, tudo que será utilizado para que as estratégias sejam
+      realizadas,
+      o material deve ser atrativo, para que a persona se interesse.
+  </DIV>
+  </br>
+
+  <div class="SubTitulo8PS">
+    <H5>4. Publicação </h5>
+  </div>
+  </br>
+  <DIV class="p8PS">
+    <p>
+      No quarto P é publicado o conteúdo produzido nos canais de comunicação escolhidos no planejamento,
+      como sites, redes sociais, e-mails ou outras ferramentas digitais.
+  </DIV>
+  </br>
+
+  <div class="SubTitulo8PS">
+    <H5>5. Promoção </h5>
+  </div>
+  </br>
+  <DIV class="p8PS">
+    <p>
+      Nesse P é Promovido o conteúdo para que aumente sua visibilidade, seja pelos meios tradicionais ou digitais,
+      como conteúdos patrocinados, anúncios e outros.
+  </DIV>
+  </br>
+
+  <div class="SubTitulo8PS">
+    <H5>6. Propagação </h5>
+  </div>
+  </br>
+
+  <DIV class="p8PS">
+    <p>
+      Na sexta etapa é feita a propagação do conteúdo para que a mensagem que deseja ser transmitida se torne viral e
+      ganhe destaque.
+      O marketing boca a boca é um exemplo de propagação que tem grande potência nas ferramentas digitais.
+  </DIV>
+  </br>
+
+
+  <div class="SubTitulo8PS">
+    <H5>7. Personalização </h5>
+  </div>
+
+  </br>
+
+  <DIV class="p8PS">
+    <p>
+      Para que os resultados sejam ainda melhores, baseado no público, o conteúdo e a linguagem são adequados a ele,
+      ajudando a criar relacionamento e fidelização de clientes. </br> </br>
+      Esse relacionamento com o cliente além de criar fidelização, gera interações e engajamento. </br> </br>
+      Produza bons conteúdos, segmente seu público, utilize métodos e ferramentas, um exemplo é o e-mail marketing que
+      pode ser utilizado para mandar o que for de interesse do segmento específico.
+      Lembre-se é importante analisar se tudo está ocorrendo da forma certa, e se precisa ser aprimorado.
+  </DIV>
+  </br>
+
+  <div class="SubTitulo8PS">
+    <H5>8. Precisão </h5>
+  </div>
+
+  </br>
+
+  <DIV class="p8PS">
+    <p>
+      O último P irá analisar, estudar, mensurar e compreender os resultados das estratégias utilizadas. Dessa forma,
+      é visto se a estratégia de marketing funcionou, há detalhes a melhorar, ou precisa ser trocada por uma que traga
+      maiores resultados.
+
+  </DIV>
+  </br> </br> </br>
+
+
+
+  <div class="voltaPS">
+    <a href="TelaPrincipal.html">
+      <button class="voltar2PS">
+        Voltar
+      </button>
+    </a>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="MKT.js"></script>
+
+</body>
+
+</html>

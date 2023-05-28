@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
+  <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
+  <title> Co-Marketing </title>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+      * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+
+        }
+
+        body {
+            background: white;
+            overflow-x: hidden;
+        }
+
+        /*         logo   */
+        .logo {
+            width: 100%;
+            height: 100%;
+            left: 69%;
+            top: -9vh;
+            position: relative;
+        }
+
+        /*         Conteiner da navbar  */
+
+        .Conteiner {
+            width: 260px;
+            margin: 0px auto;
+            margin-right: 100%;
+
+        }
+
+        .colors {
+            background: #2a7ca3;
+        }
+
+
+
+
+
+        .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            outline: 0;
+        }
+
+        /*         Fumaça e tamanho minimo da tebela    */
+
+        .Vai-e-Volta-Menu {
+            min-width: 260px;
+            float: left;
+            position: relative;
+            box-shadow: 0 30px 50px #2a7ca3;
+        }
+
+        /*         Parte de baixo da tebela       */
+
+        .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
+        .Vai-e-Volta-Menu .Menu-Baixo {
+            width: 100%;
+            height: 50px;
+            padding-left: 22px;
+            float: left;
+            line-height: 50px;
+            font-weight: 600;
+            color: #f0f0f0;
+            background: #2a7ca3;
+
+
+        }
+
+        /*         Tira as bolinha e mantem sem margim         */
+
+        .Vai-e-Volta-Menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+
+        .Vai-e-Volta-Menu ul li a {
+            width: 100%;
+            padding: 14px 22px;
+            float: left;
+            text-decoration: none;
+            color: #f0f0f0;
+            font-size: 13px;
+            background: #2a7ca3;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            transition: color .2s linear, background .2s linear;
+            -moz-transition: color .2s linear, background .2s linear;
+            -webkit-transition: color .2s linear, background .2s linear;
+            transition: color .2s linear, background .2s linear;
+        }
+
+        /*        Animação  de categoria  o  fundo          */
+
+        .Vai-e-Volta-Menu>ul>li.active>a,
+        .Vai-e-Volta-Menu>ul>li:hover>a {
+            color: #fff;
+            background: #2986b1;
+        }
+
+
+
+        .Vai-e-Volta-Menu ul li a i {
+            width: 34px;
+            float: left;
+            line-height: 18px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        /*         Botão mais de categoria            */
+        .Vai-e-Volta-Menu .submenu-indicator {
+            float: right;
+            right: 22px;
+            position: absolute;
+            line-height: 19px;
+            font-size: 20px;
+            transition: transform .3s linear;
+            -moz-transition: transform .3s linear;
+            -webkit-transition: transform .3s linear;
+            -ms-transition: transform .3s linear;
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+            line-height: 16px;
+        }
+
+        .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+
+
+        .Vai-e-Volta-Menu ul ul.submenu,
+        .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
+            width: 100%;
+            display: none;
+            position: static;
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu li {
+            clear: both;
+            width: 100%;
+
+        }
+
+        /*         Cor de dentro da  categoria            */
+
+        .Vai-e-Volta-Menu ul ul.submenu li a {
+            width: 100%;
+            float: left;
+            font-size: 11px;
+            background: #2986b1;
+            border: black;
+            position: relative;
+
+            -o-transition: border .2s linear;
+            -moz-transition: border .2s linear;
+            -webkit-transition: border .2s linear;
+            transition: border .2s linear;
+        }
+        .LogoCO {
+      width: 260px;
+    }
+
+
+    .TituloCO {
+      left: 25%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 10vh;
+    }
+
+
+
+
+    .SubTituloCO {
+      margin-left: 25%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 20VH;
+    }
+
+    .pCO {
+      margin-left: 25%;
+      margin-right: 25%;
+      position: relative;
+      top: 20VH;
+    }
+
+    .pCO2{
+      margin-left: 25%;
+      margin-right: 25%;
+      position: relative;
+      top: 20VH;
+    }
+
+
+
+    .img2CO {
+      left: 20%;
+
+     
+      top:20vh;
+      position: relative;
+    }
+
+    .img22CO{
+      width: 550px;
+      position: relative;
+    }
+
+    /*         tituloCOCO            */
+
+
+    .TituloCO2 {
+      margin-left: 35%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 220VH;
+    }
+    .TituloCO3 {
+      margin-left:28%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 20VH;
+    }
+
+    /* Botão*/
+
+    .voltaCO {
+      left: 71%;
+      color: white;
+      margin-right: 25.4%;
+      border-radius: 3em;
+
+      position: relative;
+      text-decoration: none;
+
+      font-weight: 700;
+      font-size: 1rem;
+      top: 20vh;
+
+
+    }
+
+    .voltar2CO {
+      color: white;
+      background-color: rgb(57, 127, 233);
+      border: 2px solid rgb(57, 127, 233);
+      border-radius: 3em;
+
+      width: 100px;
+      margin-right: 100%;
+    }
+    
+  
+
+    @media screen and (max-width: 1300px) {
+      .img22CO {
+        width: 400px;
+      }
+
+    }
+
+    @media screen and (max-width: 1100px) {
+
+      .SubTituloCO,
+      .pCO2 {
+        margin-left: 35%;
+        margin-right: 5%;
+        top: 10vh;
+      }
+
+      .TituloCO,
+      .pCO,
+      .Titulo2CO {
+      
+        left: 35%;
+        margin-right: 38%;
+        margin-left: 0;
+        top: 9vh;
+      }
+      .img22CO , .img2CO{
+     left: 10%;
+     top: 5vh;
+      }
+      .SubTituloCO, .TituloCO3 ,.TituloCO2{
+        top: 10vh;
+      }
+
+      .TituloCO2{
+        left: 10vh;
+      }
+
+      .TituloCO  {
+        left: 25VH;
+      }
+      .TituloCO3{
+        left: 5VH;
+      }
+      .voltaCO{
+        left: 90%;
+        top: 10vh;
+      }
+    }
+
+
+    
+
+    @media screen and (max-width: 768px) {
+
+
+.SubTituloCO,
+.pCO,
+.Titulo2CO {
+  left: 5%;
+  margin-left: 0;
+  margin-right: 10%;
+}
+.pCO2{
+  margin-left: 60%;
+  margin-right: 0;
+  top: 10vh;
+}
+.TituloCO{
+  left: 20%;
+margin-left: 40%;
+margin-right: 5%;
+}
+
+.TituloCO3{
+  margin-left: 0;
+}
+
+.img22CO {
+  width: 300PX;
+}
+
+.voltaCO {
+ 
+  right: auto;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+.voltaCO {
+  left: 120%;
+}
+.pCO{
+  margin-right: 20%;
+}
+.TituloCO{
+  left: 10%;
+}
+}
+
+@media screen and (max-width: 480px) {
+.voltaCO {
+  font-size: 0.8rem;
+}
+
+
+.img22CO {
+  width: 200px;
+}
+}
+
+
+
+
+  </style>
+
+
+
+
+</head>
+
+<body>
+    <!--   Codigo tabela canto -->
+    <div class="Conteiner">
+
+      <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+  
+        <div class="header"><img src="logoC.jpeg" class="LogoCO"> </div>
+        <ul>
+          <ul>
+  
+  
+            <li><a href="index.HTML"></i>Inicio </a></li>
+            <li><a href="#"></i>Categorias </a>
+              <ul class="submenu">
+                <li><a href="Marketing .html" class="Categoria">
+                    Marketing Digital </a></li>
+                <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
+                <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
+                <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
+                <li><a href="SEO.html" class="Categoria"> SEO </a></li>
+              </ul>
+            </li>
+  
+            <li><a href="persona.html"></i>Persona </a></li>
+            <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+            <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+            <li><a href="contato.html"></i>Entre em Contato</a></li>
+          </ul>
+          <div class="Menu-Baixo"> </div>
+      </div>
+    </div>
+
+  <!--   Codigo tela marketing -->
+
+
+  <!--   tITULOCOCO -->
+  <div class="TituloCO">
+    <H3> O que é o Co-Marketing?</h3>
+  </div>
+
+  </br>
+
+  <DIV class="pCO2">
+    <p>
+      O Co-marketing é a união de duas ou mais empresas que compartilham a mesma estratégia de marketing.
+
+      </br>
+
+      Essa estratégia traz benefícios para ambas as empresas se for bem planejada e executada.
+
+      </br>
+
+      A união deve ser feita com empresas de mesmo público-alvo, mas com ofertas complementares, não com concorrente
+      direto.
+    </p>
+  </DIV>
+  </br>
+
+  <DIV class="img2CO">
+    <img src="https://cdn2.wpbeginner.com/wp-content/uploads/2015/04/affiliatemarketing.png" class="img22CO">
+  </DIV>
+  </br> </br>
+
+
+  <div class="TituloCO2">
+    <H3> Como utilizar o Co-marketing?</h3>
+  </div>
+
+  </br>
+
+
+  <div class="SubTituloCO">
+    <H5>Encontre um parceiro de qualidade </h5>
+  </div>
+
+  </br>
+
+
+
+  <DIV class="pCO">
+    <p>
+      Para que a estratégia funcione é preciso escolher um bom parceiro, se atente aos detalhes como:
+
+      </br>
+
+      <li> O público-alvo deve ser igual ao seu;</li>
+      <li> Tenha um produto complementar ao que você oferece;</li>
+      <li> Produz conteúdos, tem conhecimento e audiência de qualidade. </li>
+
+
+
+
+
+    </p>
+  </DIV>
+  </br>
+
+  <div class="SubTituloCO">
+    <H5>Faça o planejamento </h5>
+  </div>
+
+  </br>
+
+
+
+  <DIV class="pCO">
+    <p>
+      Agora que o parceiro foi escolhido, é necessário planejar o que será feito.
+
+      </br>
+
+
+      As empresas devem fazer o planejamento em conjunto para que ambos saiam satisfeitos.
+
+
+      </br> </br>
+
+      Estabeleça os objetivos, tópicos a serem abordados, materiais utilizados,
+      prazos e como será feita a divisão de tarefas de cada empresa. O marketing de conteúdo é um grande aliado nesse
+      momento.
+
+
+
+
+    </p>
+  </DIV>
+  </br>
+
+
+
+  <div class="TituloCO3">
+    <H3> Exemplos do que produzir para a ação de Co-marketing</h3>
+  </div>
+
+  </br>
+
+
+  <DIV class="pCO">
+    Como dito anteriormente, no planejamento é decidido os materiais que serão produzidos, a seguir ajudaremos você com
+    exemplos do que produzir:
+
+
+
+
+
+    </p>
+  </DIV>
+  </br>
+
+
+
+  <DIV class="pCO">
+    <p>
+      Para que a estratégia funcione é preciso escolher um bom parceiro, se atente aos detalhes como:
+
+      </br>
+
+      <li> <b> E-books: </b> Aprofunda o conteúdo, estabelece credibilidade e agrega valor ao público. </li>
+      <li> <b> Vídeos: </b> Podem ser criados vídeos quem tenham entrevistas, tutoriais, reviews de produtos, etc. </li>
+      <li> <b> Eventos: </b> Eventos que destaquem os produtos da estratégia e sejam interessantes e leves ao público.
+      </li>
+      <li> <b> Whitepapers:</b> O whitepaper é um documento que informa, esclarece ou soluciona determinado problema.
+        É importante que o tema abordado seja relevante e persuasivo, o layout deve ser bom e atrativo.
+
+      </li>
+
+
+
+
+    </p>
+  </DIV>
+  </br>
+
+
+
+  <div class="voltaCO">
+    <a href="TelaPrincipal.html">
+      <button class="voltar2CO">
+        Voltar
+      </button>
+    </a>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="MKT.js"></script>
+
+</body>
+
+</html>

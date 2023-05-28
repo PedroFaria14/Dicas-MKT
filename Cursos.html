@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
+    <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
+    <title>Cursos Gratuitos</title>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+            overflow-x: hidden;
+        }
+
+        /* logo */
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            left: 70%;
+            top: -9vh;
+            position: relative;
+        }
+
+        /* Container da navbar */
+
+        .Conteiner {
+            width: 260px;
+            margin: 0px auto;
+            margin-right: 100%;
+        }
+
+        .colors {
+            background: #2a7ca3;
+        }
+
+        /* Menu */
+
+        .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            outline: 0;
+        }
+
+        .Vai-e-Volta-Menu {
+            min-width: 260px;
+            float: left;
+            position: relative;
+            box-shadow: 0 30px 50px #2a7ca3;
+        }
+
+        .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
+        .Vai-e-Volta-Menu .Menu-Baixo {
+            width: 100%;
+            height: 50px;
+            padding-left: 22px;
+            float: left;
+            font-weight: 600;
+            color: #f0f0f0;
+            background: #2a7ca3;
+        }
+
+        .Vai-e-Volta-Menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .Vai-e-Volta-Menu ul li a {
+            width: 100%;
+            padding: 14px 22px;
+            float: left;
+            text-decoration: none;
+            color: #f0f0f0;
+            font-size: 13px;
+            background: #2a7ca3;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            transition: color .2s linear, background .2s linear;
+            -moz-transition: color .2s linear, background .2s linear;
+            -webkit-transition: color .2s linear, background .2s linear;
+            transition: color .2s linear, background .2s linear;
+        }
+
+        .Vai-e-Volta-Menu>ul>li.active>a,
+        .Vai-e-Volta-Menu>ul>li:hover>a {
+            color: #fff;
+            background: #2986b1;
+        }
+
+        .Vai-e-Volta-Menu ul li a i {
+            width: 34px;
+            float: left;
+            line-height: 18px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .Vai-e-Volta-Menu .submenu-indicator {
+            float: right;
+            right: 22px;
+            position: absolute;
+            line-height: 19px;
+            font-size: 20px;
+            transition: transform .3s linear;
+            -moz-transition: transform .3s linear;
+            -webkit-transition: transform .3s linear;
+            -ms-transition: transform .3s linear;
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+            line-height: 16px;
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+            line-height: 16px;
+        }
+
+        .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+            line-height: 16px;
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+            line-height: 16px;
+        }
+
+        .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu,
+        .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
+            width: 100%;
+            display: none;
+            position: static;
+        }
+
+        .Vai-e-Volta-Menu ul ul.submenu li {
+            clear: both;
+            width: 100%;
+        }
+
+        /* Cor de dentro da categoria */
+
+        .Vai-e-Volta-Menu ul ul.submenu li a {
+            width: 100%;
+            float: left;
+            font-size: 11px;
+            background: #2986b1;
+            border: black;
+            position: relative;
+
+            -o-transition: border .2s linear;
+            -moz-transition: border .2s linear;
+            -webkit-transition: border .2s linear;
+            transition: border .2s linear;
+        }
+
+        .LogoCUR {
+            width: 260px;
+        }
+
+        .voltaCUR {
+            left: 0%;
+            color: white;
+            right: 0%;
+            border-radius: 3em;
+
+            position: relative;
+            text-decoration: none;
+
+            font-weight: 700;
+            font-size: 1rem;
+            top: 10VH;
+        }
+
+        .voltar2CUR {
+            color: white;
+            background-color: rgb(57, 127, 233);
+            border: 2px solid rgb(57, 127, 233);
+            border-radius: 3em;
+
+            width: 100px;
+            right: 100%;
+        }
+
+        .TituloCUR1 {
+  color: rgb(57, 127, 233);
+  font-size: 3.5em;
+  text-align: center;
+top: 5vh;
+position: relative;
+}
+
+.TituloCUR2 {
+  color: rgb(57, 127, 233);
+  text-align: center;
+  margin-top: 7vh;
+}
+
+.botaoCursos {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(57, 127, 233);
+  border: 2px solid rgb(57, 127, 233);
+  border-radius: 3em;
+  width: 100px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -5px;
+}
+
+.card {
+  flex-basis: calc(50% - 20px);
+  max-width: 300px; /* Ajuste o valor máximo de largura dos cards conforme desejado */
+  background-color: whitesmoke;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-color: rgb(57, 127, 233);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+  top: 10vh;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(57, 127, 233);
+}
+
+.card-line {
+  border: none;
+  border-top: 1px solid rgb(57, 127, 233);
+  margin: 20px 0;
+}
+
+    </style>
+
+
+</head>
+
+<body>
+    <!--   Codigo tabela canto -->
+    <div class="Conteiner">
+
+        <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+
+            <div class="header"><img src="logoC.jpeg" class="LogoCUR"> </div>
+            <ul>
+                <ul>
+
+
+                    <li><a href="index.HTML"></i>Inicio </a></li>
+                    <li><a href="#"></i>Categorias </a>
+                        <ul class="submenu">
+                            <li><a href="Marketing .html" class="Categoria">
+                                    Marketing Digital </a></li>
+                            <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
+                            <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
+                            <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
+                            <li><a href="SEO.html" class="Categoria"> SEO </a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="persona.html"></i>Persona </a></li>
+                    <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+                    <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+                    <li><a href="contato.html"></i>Entre em Contato</a></li>
+                </ul>
+                <div class="Menu-Baixo"> </div>
+        </div>
+    </div>
+
+    <div class="TituloCUR1">
+        <H3> Cursos</h3>
+    </div>
+
+    <div class="TituloCUR2">
+        <H5> Amplie seu conhecimento! Nossos cursos gratuitos estão disponíveis pra você. </h5>
+    </div>
+
+
+
+
+    <div class="card-container">
+        <div class="card">
+            <h2 class="card-title">Marketing digital para iniciantes</h2>
+            <hr class="card-line">
+            <a href="https://courseai.co/go/5QJi1AN3u51vwRtWI6DR">
+                <button class="botaoCursos">Iniciar</button></a>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">Como criar uma persona</h2>
+            <hr class="card-line">
+            <a href="https://courseai.co/go/GKpzE2NxEmGu0puamKkN">
+                <button class="botaoCursos">Iniciar</button></a>
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="MKT.js"></script>
+
+
+</body>
+
+</html>
