@@ -9,324 +9,292 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <style>
 
-
-
- 
-
-
-
-
 * {
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
 
-        }
+    }
 
-        body {
-            background: white;
-            overflow-x: hidden;
-        }
+    body {
+      background: white;
+      overflow-x: hidden;
+    }
 
-        /*         logo   */
-        .logo {
-            width: 100%;
-            height: 100%;
-            left: 69%;
-            top: -9vh;
-            position: relative;
-        }
+    /*         logo   */
+    .logo {
+      width: 100%;
+      height: 100%;
+      left: 69%;
+      top: -9vh;
+      position: relative;
+    }
 
-        /*         Conteiner da navbar  */
+    .LogoMKT{
+  width: 260px;
+}
 
-        .Conteiner {
-            width: 260px;
-            margin: 0px auto;
-            margin-right: 100%;
+    /*         Conteiner da navbar  */
 
-        }
+    .Conteiner {
+      width: 260px;
+      margin: 0px auto;
+      margin-right: 100%;
 
-        .colors {
-            background: #2a7ca3;
-        }
+    }
 
-
-
-
-
-        .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
-            font-family: 'Open Sans', sans-serif;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            outline: 0;
-        }
-
-        /*         Fumaça e tamanho minimo da tebela    */
-
-        .Vai-e-Volta-Menu {
-            min-width: 260px;
-            float: left;
-            position: relative;
-            box-shadow: 0 30px 50px #2a7ca3;
-        }
-
-        /*         Parte de baixo da tebela       */
-
-        .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
-        .Vai-e-Volta-Menu .Menu-Baixo {
-            width: 100%;
-            height: 50px;
-            padding-left: 22px;
-            float: left;
-            line-height: 50px;
-            font-weight: 600;
-            color: #f0f0f0;
-            background: #2a7ca3;
-
-
-        }
-
-        /*         Tira as bolinha e mantem sem margim         */
-
-        .Vai-e-Volta-Menu ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-
-        .Vai-e-Volta-Menu ul li a {
-            width: 100%;
-            padding: 14px 22px;
-            float: left;
-            text-decoration: none;
-            color: #f0f0f0;
-            font-size: 13px;
-            background: #2a7ca3;
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
-            transition: color .2s linear, background .2s linear;
-            -moz-transition: color .2s linear, background .2s linear;
-            -webkit-transition: color .2s linear, background .2s linear;
-            transition: color .2s linear, background .2s linear;
-        }
-
-        /*        Animação  de categoria  o  fundo          */
-
-        .Vai-e-Volta-Menu>ul>li.active>a,
-        .Vai-e-Volta-Menu>ul>li:hover>a {
-            color: #fff;
-            background: #2986b1;
-        }
+    .colors {
+      background: #2a7ca3;
+    }
 
 
 
-        .Vai-e-Volta-Menu ul li a i {
-            width: 34px;
-            float: left;
-            line-height: 18px;
-            font-size: 16px;
-            text-align: left;
-        }
-
-        /*         Botão mais de categoria            */
-        .Vai-e-Volta-Menu .submenu-indicator {
-            float: right;
-            right: 22px;
-            position: absolute;
-            line-height: 19px;
-            font-size: 20px;
-            transition: transform .3s linear;
-            -moz-transition: transform .3s linear;
-            -webkit-transition: transform .3s linear;
-            -ms-transition: transform .3s linear;
-        }
-
-        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-            line-height: 16px;
-        }
-
-        .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-            -ms-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
 
 
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      outline: 0;
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu,
-        .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
-            width: 100%;
-            display: none;
-            position: static;
-        }
+    /*         Fumaça e tamanho minimo da tebela    */
 
-        .Vai-e-Volta-Menu ul ul.submenu li {
-            clear: both;
-            width: 100%;
+    .Vai-e-Volta-Menu {
+      min-width: 260px;
+      float: left;
+      position: relative;
+      box-shadow: 0 30px 50px #2a7ca3;
+    }
 
-        }
+    /*         Parte de baixo da tebela       */
 
-        /*         Cor de dentro da  categoria            */
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
+    .Vai-e-Volta-Menu .Menu-Baixo {
+      width: 100%;
+      height: 50px;
+      padding-left: 22px;
+      float: left;
+      line-height: 50px;
+      font-weight: 600;
+      color: #f0f0f0;
+      background: #2a7ca3;
 
-        .Vai-e-Volta-Menu ul ul.submenu li a {
-            width: 100%;
-            float: left;
-            font-size: 11px;
-            background: #2986b1;
-            border: black;
-            position: relative;
 
-            -o-transition: border .2s linear;
-            -moz-transition: border .2s linear;
-            -webkit-transition: border .2s linear;
-            transition: border .2s linear;
-        }
+    }
+
+    /*         Tira as bolinha e mantem sem margim         */
+
+    .Vai-e-Volta-Menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+
+    .Vai-e-Volta-Menu ul li a {
+      width: 100%;
+      padding: 14px 22px;
+      float: left;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-size: 13px;
+      background: #2a7ca3;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      transition: color .2s linear, background .2s linear;
+      -moz-transition: color .2s linear, background .2s linear;
+      -webkit-transition: color .2s linear, background .2s linear;
+      transition: color .2s linear, background .2s linear;
+    }
+
+    /*        Animação  de categoria  o  fundo          */
+
+    .Vai-e-Volta-Menu>ul>li.active>a,
+    .Vai-e-Volta-Menu>ul>li:hover>a {
+      color: #fff;
+      background: #2986b1;
+    }
+
+
+
+    .Vai-e-Volta-Menu ul li a i {
+      width: 34px;
+      float: left;
+      line-height: 18px;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    /*         Botão mais de categoria            */
+    .Vai-e-Volta-Menu .submenu-indicator {
+      float: right;
+      right: 22px;
+      position: absolute;
+      line-height: 19px;
+      font-size: 20px;
+      transition: transform .3s linear;
+      -moz-transition: transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      -ms-transition: transform .3s linear;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
+
+    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+
+
+    .Vai-e-Volta-Menu ul ul.submenu,
+    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
+      width: 100%;
+      display: none;
+      position: static;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu li {
+      clear: both;
+      width: 100%;
+
+    }
+
+    /*         Cor de dentro da  categoria            */
+
+    .Vai-e-Volta-Menu ul ul.submenu li a {
+      width: 100%;
+      float: left;
+      font-size: 11px;
+      background: #2986b1;
+      border: black;
+      position: relative;
+
+      -o-transition: border .2s linear;
+      -moz-transition: border .2s linear;
+      -webkit-transition: border .2s linear;
+      transition: border .2s linear;
+    }
         .LogoPER {
       width: 260px;
     }
         
 
              /* Começa o  texto*/
+/* TituloPER grande */
+.TituloPER {
+  left: 30%;
+  color: rgb(57, 127, 233);
+  position: relative;
+}
 
-             /*  TituloPER grande */
-             .TituloPER{
-                    left: 30% ;
-                    color: rgb(57, 127, 233);
-                    position: relative;
-             }
-             
-             .TituloPER1{
-                    left: 20% ;
-                    color: rgb(57, 127, 233);
-                  position: relative;
-             }
+.TituloPER1 {
+  left: 20%;
+  color: rgb(57, 127, 233);
+  position: relative;
+}
 
-             .paraPER{
-                margin-left: 25%;
-                margin-right: 25%;
-                position: relative;
-             }
-        
+.paraPER {
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+}
 
-             .SubTituloPER{
-                    margin-left: 25% ;
-                    color: rgb(57, 127, 233);
-                    position: relative;
-             }
-
-           
-          
-
-             
- .voltaPER {
-      left: 71%;
-      color: white;
-      margin-right: 25.4%;
-      border-radius: 3em;
-
-      position: relative;
-      text-decoration: none;
-
-      font-weight: 700;
-      font-size: 1rem;
-      top: 10vh;
-      position: relative;
-    margin-bottom: 10vh;
-    }
-
-    .voltaPER2 {
-      color: white;
-      background-color: rgb(57, 127, 233);
-      border: 2px solid rgb(57, 127, 233);
-      border-radius: 3em;
-
-      width: 100px;
-      margin-right: 100%;
-    }
-
-
-    /* Media query para telas de até 1200px */
-    @media screen and (max-width: 1100px) {
-
-.paraPER,
 .SubTituloPER {
-  margin-left: 100%;
-  margin-right: 10%;
+  margin-left: 25%;
+  color: rgb(57, 127, 233);
+  position: relative;
 }
 
-.TituloPER{
-left: 20%;
-margin-left: 0;
-margin-right: 0;
+.voltaPER {
+  left: 71%;
+  color: white;
+  margin-right: 25.4%;
+  border-radius: 3em;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  top: 10vh;
+  position: relative;
+  margin-bottom: 10vh;
 }
 
-
-
-.TituloPER1,
-.TituloPER,
-.SubTituloPER,
-.paraPER
-
-{
-  margin-left: 35%;
-  margin-right: 10%;
+.voltaPER2 {
+  color: white;
+  background-color: rgb(57, 127, 233);
+  border: 2px solid rgb(57, 127, 233);
+  border-radius: 3em;
+  width: 100px;
+  margin-right: 100%;
 }
 
+/* Media query para telas de até 1200px */
+@media screen and (max-width: 1200px) {
+  .paraPER,
+  .SubTituloPER {
+    margin-left: 10vw;
+    margin-right: 0%;
+  }
 
-.TituloPER
-.TituloPER1
-{
-  left: 0;
-}
-.voltaPER{
-  top: -50%;
-  left: 100%;
-  margin-right: 0;
-  margin: 0;
-  margin-left: 10%;
-  margin-bottom: 10%;
-}
+  .TituloPER {
+    left: 10%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-.TituloPER1{
-left: 15%;
-margin: 0 ;
-}
+  .TituloPER1,
+  .TituloPER,
+  .SubTituloPER,
+  .paraPER {
+    margin-left: 20%;
+    margin-right: 5%;
+  }
 
+  .voltaPER {
+    left: 10vw;
+    margin-right: 0;
+    transform: translateX(-50%);
+    top: 7vh;
+  }
+
+  .TituloPER1 {
+    left: 15%;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .TituloPER,
+  .TituloPER1,
+  .paraPER,
+  .SubTituloPER {
+    margin-left: 20%;
+    margin-right: 0%;
+  }
 
-.TituloPER
-,.TituloPER1,
-.paraPER, .SubTituloPER
- {
-  margin-left: 40%;
-  margin-right: 0%;
-}
+  .TituloPER {
+    left: 10%;
+  }
 
+  .TituloPER1 {
+    left: 0%;
+  }
 
-
-.TituloPER
- {
-  left: 20%;
-}
-.TituloPER1{
-    left:0%;
-}
-
-.voltaPER{
+  .voltaPER {
     margin: 0;
     top: 100%;
     left: 85%;
+  }
 }
 
-
-
-}
                 </style>
 
               
@@ -565,7 +533,7 @@ margin: 0 ;
         </br>
 
         <div class="voltaPER">
-            <a href="TelaPrincipal.html">
+            <a href="index.html">
             <button class="voltaPER2">
 
                     
