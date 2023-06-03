@@ -214,77 +214,105 @@ margin: 0;
   cursor: pointer;
 }
 
-*AppSocial*/
-
-.Rede_social { 
- 
-	width:1%; 
-	float:left; 
-	display:flex; 
-	margin:auto; 
-}
-
-.Rede_social ul  { 
-  
-	width:auto; 
-  justify-content: space-around;
-	float:left; 
-	display:flex; 
-margin-left: 0%;
-align-items: center;
-flex-wrap: wrap;
-padding-right:40% ;
-margin-left: 0%;
-margin-top: 1vh;
-}
-
-
-.Rede_social ul li  { 
-
-	position:relative; 
-	background:black; 
-	list-style:none; 
-	float:left; 
-	margin:5px; 
-	z-index:1; 
-	overflow:hidden; 
-	border-radius:3px; 
-	font-size:1.5em; 
-	text-align:center; 
-}
-
-
-.Rede_social ul li::before { 
+.Rede_social {
   display: flex;
-  align-items: center;
-  text-justify: auto;
-	transition:0.4s; 
-	position:absolute; 
-	content:''; 
-	width:100%; 
-	height:100%; 
-	top:90%; 
-	left:0; 
-	background: #2a7ca3;;
-	z-index:-1; 
-	transform: scale(1); 
-	transition:.4s; 
+  justify-content: center;
 }
 
-.Rede_social ul li:hover::before { transition:0.4s; top:0%; }
-.Rede_social ul li a:hover       { color:rgb(57, 127, 233); }
+.Rede_social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1vh;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.Rede_social ul li {
+  position: relative;
+  background: black;
+  list-style: none;
+  margin: 5px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 3px;
+  font-size: 1.5em;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.Rede_social ul li::before {
+  transition: 0.4s;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 90%;
+  left: 0;
+  background: #2a7ca3;
+  z-index: -1;
+  transform: scale(1);
+  transition: 0.4s;
+}
+
+.Rede_social ul li:hover::before {
+  transition: 0.4s;
+  top: 0%;
+}
+
+.Rede_social ul li a:hover {
+  color: rgb(57, 127, 233);
+}
+
 /*App Social*/
 
-.IMGcont{
-width: 70px;
-
+.IMGcont {
+  width: 70px;
 }
-.instagram{
-  top: 100%;
-position: relative;
-margin-left: 100%;
 
+.instagram {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.h2 {
+  
+ 
+  text-align: center;
+    
+   
+  margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+    position: relative;
+    
+    text-align: left;
+  right: 40%; /* Ajuste o valor conforme necessário */
+  top: 7vh; /* Ajuste o valor conforme necessário */
+  }
+ 
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 1000px) {
+  .Rede_social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1vh;
+    padding-right: 0%;
+    padding-left: 0%;
+    padding: 0;
+    left: 7vh;
+    position: relative;
+  }
+  .h2 {
+    right: 50%;
+    
+   top: 4VH; /* Ajuste o valor conforme necessário */
+  }
+}
+
+
 
 
     </style>
@@ -343,8 +371,9 @@ margin-left: 100%;
       <ul class="instagram4">
         <li> 
           <a href="#" title="Gmail2">
-          <img src="google.png" class="IMGcont">
+          <img src="out.png" class="IMGcont">
    
+
     
           </a> 
         </li>
