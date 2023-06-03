@@ -12,176 +12,177 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <style>
-      * {
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
 
-        }
+    }
 
-        body {
-            background: white;
-            overflow-x: hidden;
-        }
+    body {
+      background: white;
+      overflow-x: hidden;
+    }
 
-        /*         logo   */
-        .logo {
-            width: 100%;
-            height: 100%;
-            left: 69%;
-            top: -9vh;
-            position: relative;
-        }
+    /*         logo   */
+    .logo {
+      width: 100%;
+      height: 100%;
+      left: 69%;
+      top: -9vh;
+      position: relative;
+    }
 
-        /*         Conteiner da navbar  */
+    /*         Conteiner da navbar  */
 
-        .Conteiner {
-            width: 260px;
-            margin: 0px auto;
-            margin-right: 100%;
+    .Conteiner {
+      width: 260px;
+      margin: 0px auto;
+      margin-right: 100%;
 
-        }
+    }
 
-        .colors {
-            background: #2a7ca3;
-        }
-
-
+    .colors {
+      background: #2a7ca3;
+    }
 
 
 
-        .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
-            font-family: 'Open Sans', sans-serif;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            outline: 0;
-        }
-
-        /*         Fumaça e tamanho minimo da tebela    */
-
-        .Vai-e-Volta-Menu {
-            min-width: 260px;
-            float: left;
-            position: relative;
-            box-shadow: 0 30px 50px #2a7ca3;
-        }
-
-        /*         Parte de baixo da tebela       */
-
-        .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
-        .Vai-e-Volta-Menu .Menu-Baixo {
-            width: 100%;
-            height: 50px;
-            padding-left: 22px;
-            float: left;
-            line-height: 50px;
-            font-weight: 600;
-            color: #f0f0f0;
-            background: #2a7ca3;
 
 
-        }
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      outline: 0;
+    }
 
-        /*         Tira as bolinha e mantem sem margim         */
+    /*         Fumaça e tamanho minimo da tebela    */
 
-        .Vai-e-Volta-Menu ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+    .Vai-e-Volta-Menu {
+      min-width: 260px;
+      float: left;
+      position: relative;
+      box-shadow: 0 30px 50px #2a7ca3;
+    }
 
+    /*         Parte de baixo da tebela       */
 
-        .Vai-e-Volta-Menu ul li a {
-            width: 100%;
-            padding: 14px 22px;
-            float: left;
-            text-decoration: none;
-            color: #f0f0f0;
-            font-size: 13px;
-            background: #2a7ca3;
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
-            transition: color .2s linear, background .2s linear;
-            -moz-transition: color .2s linear, background .2s linear;
-            -webkit-transition: color .2s linear, background .2s linear;
-            transition: color .2s linear, background .2s linear;
-        }
-
-        /*        Animação  de categoria  o  fundo          */
-
-        .Vai-e-Volta-Menu>ul>li.active>a,
-        .Vai-e-Volta-Menu>ul>li:hover>a {
-            color: #fff;
-            background: #2986b1;
-        }
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
+    .Vai-e-Volta-Menu .Menu-Baixo {
+      width: 100%;
+      height: 50px;
+      padding-left: 22px;
+      float: left;
+      line-height: 50px;
+      font-weight: 600;
+      color: #f0f0f0;
+      background: #2a7ca3;
 
 
+    }
 
-        .Vai-e-Volta-Menu ul li a i {
-            width: 34px;
-            float: left;
-            line-height: 18px;
-            font-size: 16px;
-            text-align: left;
-        }
+    /*         Tira as bolinha e mantem sem margim         */
 
-        /*         Botão mais de categoria            */
-        .Vai-e-Volta-Menu .submenu-indicator {
-            float: right;
-            right: 22px;
-            position: absolute;
-            line-height: 19px;
-            font-size: 20px;
-            transition: transform .3s linear;
-            -moz-transition: transform .3s linear;
-            -webkit-transition: transform .3s linear;
-            -ms-transition: transform .3s linear;
-        }
+    .Vai-e-Volta-Menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-            line-height: 16px;
-        }
 
-        .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-            -ms-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
+    .Vai-e-Volta-Menu ul li a {
+      width: 100%;
+      padding: 14px 22px;
+      float: left;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-size: 13px;
+      background: #2a7ca3;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      transition: color .2s linear, background .2s linear;
+      -moz-transition: color .2s linear, background .2s linear;
+      -webkit-transition: color .2s linear, background .2s linear;
+      transition: color .2s linear, background .2s linear;
+    }
+
+    /*        Animação  de categoria  o  fundo          */
+
+    .Vai-e-Volta-Menu>ul>li.active>a,
+    .Vai-e-Volta-Menu>ul>li:hover>a {
+      color: #fff;
+      background: #2986b1;
+    }
 
 
 
-        .Vai-e-Volta-Menu ul ul.submenu,
-        .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
-            width: 100%;
-            display: none;
-            position: static;
-        }
+    .Vai-e-Volta-Menu ul li a i {
+      width: 34px;
+      float: left;
+      line-height: 18px;
+      font-size: 16px;
+      text-align: left;
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu li {
-            clear: both;
-            width: 100%;
+    /*         Botão mais de categoria            */
+    .Vai-e-Volta-Menu .submenu-indicator {
+      float: right;
+      right: 22px;
+      position: absolute;
+      line-height: 19px;
+      font-size: 20px;
+      transition: transform .3s linear;
+      -moz-transition: transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      -ms-transition: transform .3s linear;
+    }
 
-        }
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
 
-        /*         Cor de dentro da  categoria            */
+    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu li a {
-            width: 100%;
-            float: left;
-            font-size: 11px;
-            background: #2986b1;
-            border: black;
-            position: relative;
 
-            -o-transition: border .2s linear;
-            -moz-transition: border .2s linear;
-            -webkit-transition: border .2s linear;
-            transition: border .2s linear;
-        }
-        .LogoCO {
+
+    .Vai-e-Volta-Menu ul ul.submenu,
+    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
+      width: 100%;
+      display: none;
+      position: static;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu li {
+      clear: both;
+      width: 100%;
+
+    }
+
+    /*         Cor de dentro da  categoria            */
+
+    .Vai-e-Volta-Menu ul ul.submenu li a {
+      width: 100%;
+      float: left;
+      font-size: 11px;
+      background: #2986b1;
+      border: black;
+      position: relative;
+
+      -o-transition: border .2s linear;
+      -moz-transition: border .2s linear;
+      -webkit-transition: border .2s linear;
+      transition: border .2s linear;
+    }
+
+    .LogoCO {
       width: 260px;
     }
 
@@ -210,7 +211,7 @@
       top: 20VH;
     }
 
-    .pCO2{
+    .pCO2 {
       margin-left: 25%;
       margin-right: 25%;
       position: relative;
@@ -222,12 +223,12 @@
     .img2CO {
       left: 20%;
 
-     
-      top:20vh;
+
+      top: 20vh;
       position: relative;
     }
 
-    .img22CO{
+    .img22CO {
       width: 550px;
       position: relative;
     }
@@ -241,8 +242,9 @@
       position: relative;
       top: 20VH;
     }
+
     .TituloCO3 {
-      margin-left:28%;
+      margin-left: 28%;
       color: rgb(57, 127, 233);
       position: relative;
       top: 20VH;
@@ -275,8 +277,8 @@
       width: 100px;
       margin-right: 100%;
     }
-    
-  
+
+
 
     @media screen and (max-width: 1300px) {
       .img22CO {
@@ -294,34 +296,40 @@
         top: 10vh;
       }
 
-   
-      .pCO
-       {
-      
+
+      .pCO {
+
         left: 35%;
         margin-right: 38%;
         margin-left: 0;
         top: 9vh;
       }
-      .img22CO , .img2CO{
-     left: 10%;
-     top: 5vh;
+
+      .img22CO,
+      .img2CO {
+        left: 10%;
+        top: 5vh;
       }
-      .SubTituloCO, .TituloCO3 ,.TituloCO2{
+
+      .SubTituloCO,
+      .TituloCO3,
+      .TituloCO2 {
         top: 10vh;
       }
 
-      .TituloCO2{
+      .TituloCO2 {
         left: 10vh;
       }
 
-      .TituloCO  {
+      .TituloCO {
         left: 25VH;
       }
-      .TituloCO3{
+
+      .TituloCO3 {
         left: 5VH;
       }
-      .voltaCO{
+
+      .voltaCO {
         left: 90%;
         top: 10vh;
       }
@@ -332,81 +340,82 @@
         margin-left: 0;
         top: 9vh;
       }
-      .TituloCO2{
-      left: 20%;
+
+      .TituloCO2 {
+        left: 20%;
         margin-right: 30%;
         margin-left: 0;
         top: 9vh;
-    }
+      }
     }
 
 
-    
+
 
     @media screen and (max-width: 768px) {
 
 
-.SubTituloCO,
-.pCO,
-.Titulo2CO {
-  left: 5%;
-  margin-left: 0;
-  margin-right: 10%;
-}
-.pCO2{
-  margin-left: 60%;
-  margin-right: 0;
-  top: 10vh;
-}
-.TituloCO{
-  left: 20%;
-margin-left: 40%;
-margin-right: 5%;
-}
+      .SubTituloCO,
+      .pCO,
+      .Titulo2CO {
+        left: 5%;
+        margin-left: 0;
+        margin-right: 10%;
+      }
 
-.TituloCO3{
-  margin-left: 0;
-}
+      .pCO2 {
+        margin-left: 60%;
+        margin-right: 0;
+        top: 10vh;
+      }
 
-.img22CO {
-  width: 300PX;
-}
+      .TituloCO {
+        left: 20%;
+        margin-left: 40%;
+        margin-right: 5%;
+      }
 
-.voltaCO {
- 
-  right: auto;
-  transform: translateX(-50%);
-}
+      .TituloCO3 {
+        margin-left: 0;
+      }
 
+      .img22CO {
+        width: 300PX;
+      }
 
+      .voltaCO {
 
-
-
-.voltaCO {
-  left: 120%;
-}
-.pCO{
-  margin-right: 20%;
-}
-.TituloCO{
-  left: 10%;
-}
-}
-
-@media screen and (max-width: 480px) {
-.voltaCO {
-  font-size: 0.8rem;
-}
-
-
-.img22CO {
-  width: 200px;
-}
-}
+        right: auto;
+        transform: translateX(-50%);
+      }
 
 
 
 
+
+      .voltaCO {
+        left: 120%;
+      }
+
+      .pCO {
+        margin-right: 20%;
+      }
+
+      .TituloCO {
+        left: 10%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .voltaCO {
+        font-size: 0.8rem;
+      }
+
+
+      .img22CO {
+        width: 200px;
+      }
+    }
   </style>
 
 
@@ -415,36 +424,36 @@ margin-right: 5%;
 </head>
 
 <body>
-    <!--   Codigo tabela canto -->
-    <div class="Conteiner">
+  <!--   Codigo tabela canto -->
+  <div class="Conteiner">
 
-      <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
-  
-        <div class="header"><img src="logoC.jpeg" class="LogoCO"> </div>
+    <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+
+      <div class="header"><img src="logoC.jpeg" class="LogoCO"> </div>
+      <ul>
         <ul>
-          <ul>
-  
-  
-            <li><a href="TelaIncial.html"></i>Inicio </a></li>
-            <li><a href="#"></i>Categorias </a>
-              <ul class="submenu">
-                <li><a href="Marketing .html" class="Categoria">
-                    Marketing Digital </a></li>
-                <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
-                <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
-                <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
-                <li><a href="SEO.html" class="Categoria"> SEO </a></li>
-              </ul>
-            </li>
-  
-            <li><a href="persona.html"></i>Persona </a></li>
-            <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
-            <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
-            <li><a href="contato.html"></i>Entre em Contato</a></li>
-          </ul>
-          <div class="Menu-Baixo"> </div>
-      </div>
+
+
+          <li><a href="TelaIncial.html"></i>Inicio </a></li>
+          <li><a href="#"></i>Categorias </a>
+            <ul class="submenu">
+              <li><a href="Marketing .html" class="Categoria">
+                  Marketing Digital </a></li>
+              <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
+              <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
+              <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
+              <li><a href="SEO.html" class="Categoria"> SEO </a></li>
+            </ul>
+          </li>
+
+          <li><a href="persona.html"></i>Persona </a></li>
+          <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+          <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+          <li><a href="contato.html"></i>Entre em Contato</a></li>
+        </ul>
+        <div class="Menu-Baixo"> </div>
     </div>
+  </div>
 
   <!--   Codigo tela marketing -->
 

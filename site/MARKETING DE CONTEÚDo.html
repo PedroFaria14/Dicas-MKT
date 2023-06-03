@@ -2,279 +2,280 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
-    <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
-    <title> Marketing de Conteúdo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
+  <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
+  <title> Marketing de Conteúdo</title>
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
+  <style>
+    * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
 
-        }
+    }
 
-        body {
-            background: white;
-            overflow-x: hidden;
-        }
+    body {
+      background: white;
+      overflow-x: hidden;
+    }
 
-        /*         logo   */
-        .logo {
-            width: 100%;
-            height: 100%;
-            left: 69%;
-            top: -9vh;
-            position: relative;
-        }
+    /*         logo   */
+    .logo {
+      width: 100%;
+      height: 100%;
+      left: 69%;
+      top: -9vh;
+      position: relative;
+    }
 
-        /*         Conteiner da navbar  */
+    /*         Conteiner da navbar  */
 
-        .Conteiner {
-            width: 260px;
-            margin: 0px auto;
-            margin-right: 100%;
+    .Conteiner {
+      width: 260px;
+      margin: 0px auto;
+      margin-right: 100%;
 
-        }
+    }
 
-        .colors {
-            background: #2a7ca3;
-        }
-
-
+    .colors {
+      background: #2a7ca3;
+    }
 
 
 
-        .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
-            font-family: 'Open Sans', sans-serif;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            outline: 0;
-        }
-
-        /*         Fumaça e tamanho minimo da tebela    */
-
-        .Vai-e-Volta-Menu {
-            min-width: 260px;
-            float: left;
-            position: relative;
-            box-shadow: 0 30px 50px #2a7ca3;
-        }
-
-        /*         Parte de baixo da tebela       */
-
-        .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
-        .Vai-e-Volta-Menu .Menu-Baixo {
-            width: 100%;
-            height: 50px;
-            padding-left: 22px;
-            float: left;
-            line-height: 50px;
-            font-weight: 600;
-            color: #f0f0f0;
-            background: #2a7ca3;
 
 
-        }
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
+      font-family: 'Open Sans', sans-serif;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      outline: 0;
+    }
 
-        /*         Tira as bolinha e mantem sem margim         */
+    /*         Fumaça e tamanho minimo da tebela    */
 
-        .Vai-e-Volta-Menu ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+    .Vai-e-Volta-Menu {
+      min-width: 260px;
+      float: left;
+      position: relative;
+      box-shadow: 0 30px 50px #2a7ca3;
+    }
 
+    /*         Parte de baixo da tebela       */
 
-        .Vai-e-Volta-Menu ul li a {
-            width: 100%;
-            padding: 14px 22px;
-            float: left;
-            text-decoration: none;
-            color: #f0f0f0;
-            font-size: 13px;
-            background: #2a7ca3;
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
-            transition: color .2s linear, background .2s linear;
-            -moz-transition: color .2s linear, background .2s linear;
-            -webkit-transition: color .2s linear, background .2s linear;
-            transition: color .2s linear, background .2s linear;
-        }
-
-        /*        Animação  de categoria  o  fundo          */
-
-        .Vai-e-Volta-Menu>ul>li.active>a,
-        .Vai-e-Volta-Menu>ul>li:hover>a {
-            color: #fff;
-            background: #2986b1;
-        }
+    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
+    .Vai-e-Volta-Menu .Menu-Baixo {
+      width: 100%;
+      height: 50px;
+      padding-left: 22px;
+      float: left;
+      line-height: 50px;
+      font-weight: 600;
+      color: #f0f0f0;
+      background: #2a7ca3;
 
 
+    }
 
-        .Vai-e-Volta-Menu ul li a i {
-            width: 34px;
-            float: left;
-            line-height: 18px;
-            font-size: 16px;
-            text-align: left;
-        }
+    /*         Tira as bolinha e mantem sem margim         */
 
-        /*         Botão mais de categoria            */
-        .Vai-e-Volta-Menu .submenu-indicator {
-            float: right;
-            right: 22px;
-            position: absolute;
-            line-height: 19px;
-            font-size: 20px;
-            transition: transform .3s linear;
-            -moz-transition: transform .3s linear;
-            -webkit-transition: transform .3s linear;
-            -ms-transition: transform .3s linear;
-        }
+    .Vai-e-Volta-Menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-            line-height: 16px;
-        }
 
-        .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-            -ms-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-        }
+    .Vai-e-Volta-Menu ul li a {
+      width: 100%;
+      padding: 14px 22px;
+      float: left;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-size: 13px;
+      background: #2a7ca3;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      transition: color .2s linear, background .2s linear;
+      -moz-transition: color .2s linear, background .2s linear;
+      -webkit-transition: color .2s linear, background .2s linear;
+      transition: color .2s linear, background .2s linear;
+    }
+
+    /*        Animação  de categoria  o  fundo          */
+
+    .Vai-e-Volta-Menu>ul>li.active>a,
+    .Vai-e-Volta-Menu>ul>li:hover>a {
+      color: #fff;
+      background: #2986b1;
+    }
 
 
 
-        .Vai-e-Volta-Menu ul ul.submenu,
-        .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
-            width: 100%;
-            display: none;
-            position: static;
-        }
+    .Vai-e-Volta-Menu ul li a i {
+      width: 34px;
+      float: left;
+      line-height: 18px;
+      font-size: 16px;
+      text-align: left;
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu li {
-            clear: both;
-            width: 100%;
+    /*         Botão mais de categoria            */
+    .Vai-e-Volta-Menu .submenu-indicator {
+      float: right;
+      right: 22px;
+      position: absolute;
+      line-height: 19px;
+      font-size: 20px;
+      transition: transform .3s linear;
+      -moz-transition: transform .3s linear;
+      -webkit-transition: transform .3s linear;
+      -ms-transition: transform .3s linear;
+    }
 
-        }
+    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
+      line-height: 16px;
+    }
 
-        /*         Cor de dentro da  categoria            */
+    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
 
-        .Vai-e-Volta-Menu ul ul.submenu li a {
-            width: 100%;
-            float: left;
-            font-size: 11px;
-            background: #2986b1;
-            border: black;
-            position: relative;
 
-            -o-transition: border .2s linear;
-            -moz-transition: border .2s linear;
-            -webkit-transition: border .2s linear;
-            transition: border .2s linear;
-        }
-        .LogoMKC {
+
+    .Vai-e-Volta-Menu ul ul.submenu,
+    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
+      width: 100%;
+      display: none;
+      position: static;
+    }
+
+    .Vai-e-Volta-Menu ul ul.submenu li {
+      clear: both;
+      width: 100%;
+
+    }
+
+    /*         Cor de dentro da  categoria            */
+
+    .Vai-e-Volta-Menu ul ul.submenu li a {
+      width: 100%;
+      float: left;
+      font-size: 11px;
+      background: #2986b1;
+      border: black;
+      position: relative;
+
+      -o-transition: border .2s linear;
+      -moz-transition: border .2s linear;
+      -webkit-transition: border .2s linear;
+      transition: border .2s linear;
+    }
+
+    .LogoMKC {
       width: 260px;
     }
 
 
 
-        .TituloMKC {
-            left: 25%;
-            color: rgb(57, 127, 233);
-            position: relative;
-            top: 7vh;
-        }
+    .TituloMKC {
+      left: 25%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 7vh;
+    }
 
 
 
-        .ImgMKC {
-            width: 950pX;
-        }
+    .ImgMKC {
+      width: 950pX;
+    }
 
-        .ImgMarMKC {
-            align-items: center;
-            left: 12%;
-            position: relative;
-            top: 10VH;
- 
-        }
+    .ImgMarMKC {
+      align-items: center;
+      left: 12%;
+      position: relative;
+      top: 10VH;
 
-
-
-        .SubTituloMKC {
-         left: 25%;
-            color: rgb(57, 127, 233);
-            position: relative;
-            top: 7VH;
-        }
-
-        .pMKC {
-         left: 25%;
-            margin-right: 45%;
-            position: relative;
-            top: 7VH;
-        }
-
-        .pMKC2{
-            left: 13%;
-            margin-right: 40%;
-            position: relative;
-            top: 7VH; 
-            margin-left: 0; 
-        }
+    }
 
 
 
-       
+    .SubTituloMKC {
+      left: 25%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 7VH;
+    }
 
-        /*         titulo            */
+    .pMKC {
+      left: 25%;
+      margin-right: 45%;
+      position: relative;
+      top: 7VH;
+    }
 
-
-        .Titulo2MKC {
-          left: 30%;
-            color: rgb(57, 127, 233);
-            position: relative;
-            top: 10VH;
-        }
-
-        /* Botão*/
-
-        .voltaMKC {
-            left: 71%;
-            color: white;
-            margin-right: 25.4%;
-            border-radius: 3em;
-
-            position: relative;
-            text-decoration: none;
-
-            font-weight: 700;
-            font-size: 1rem;
-            top: 10vh;
+    .pMKC2 {
+      left: 13%;
+      margin-right: 40%;
+      position: relative;
+      top: 7VH;
+      margin-left: 0;
+    }
 
 
-        }
 
-        .voltar2MKC {
-            color: white;
-            background-color: rgb(57, 127, 233);
-            border: 2px solid rgb(57, 127, 233);
-            border-radius: 3em;
 
-            width: 100px;
-            margin-right: 100%;
-        }
 
-        @media screen and (max-width: 1300px) {
+    /*         titulo            */
+
+
+    .Titulo2MKC {
+      left: 30%;
+      color: rgb(57, 127, 233);
+      position: relative;
+      top: 10VH;
+    }
+
+    /* Botão*/
+
+    .voltaMKC {
+      left: 71%;
+      color: white;
+      margin-right: 25.4%;
+      border-radius: 3em;
+
+      position: relative;
+      text-decoration: none;
+
+      font-weight: 700;
+      font-size: 1rem;
+      top: 10vh;
+
+
+    }
+
+    .voltar2MKC {
+      color: white;
+      background-color: rgb(57, 127, 233);
+      border: 2px solid rgb(57, 127, 233);
+      border-radius: 3em;
+
+      width: 100px;
+      margin-right: 100%;
+    }
+
+    @media screen and (max-width: 1300px) {
       .ImgMKC {
         width: 500px;
       }
@@ -295,22 +296,25 @@
         margin-left: 10%;
         margin-right: 30%;
       }
-      .TituloMKC{
+
+      .TituloMKC {
         margin-right: 0;
         left: 100vh;
         margin-left: 30%;
       }
-      .pMKC2{
+
+      .pMKC2 {
         margin-right: 20%;
       }
 
 
-    
+
 
       .TituloMKC {
         left: 10VH;
       }
-      .voltaMKC{
+
+      .voltaMKC {
         left: 85%;
         margin-bottom: 10%;
       }
@@ -332,7 +336,7 @@
       }
 
       .voltaMKC {
-       
+
         right: auto;
         transform: translateX(-50%);
       }
@@ -348,12 +352,14 @@
       .voltaMKC {
         left: 120%;
       }
-      .pMKC2{
+
+      .pMKC2 {
         margin-right: 20%;
       }
-      .TituloMKC{
+
+      .TituloMKC {
         left: 10%;
-    }
+      }
     }
 
     @media screen and (max-width: 480px) {
@@ -361,16 +367,12 @@
         font-size: 0.8rem;
       }
 
-   
+
       .ImgMKC {
         width: 300px;
       }
     }
-        
-        
-        
-        
-        </style>
+  </style>
 
 
 
@@ -378,7 +380,7 @@
 </head>
 
 <body>
-    <!--   Codigo tabela canto -->
+  <!--   Codigo tabela canto -->
   <div class="Conteiner">
 
     <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
@@ -411,150 +413,147 @@
 
 
 
-    <!--   Codigo tela marketing -->
+  <!--   Codigo tela marketing -->
 
 
-    <!--   tITULO -->
+  <!--   tITULO -->
 
 
-    <div class="TituloMKC">
-        <H3> Marketing de Conteúdo</h3>
-    </div>
+  <div class="TituloMKC">
+    <H3> Marketing de Conteúdo</h3>
+  </div>
 
-    </br>
-
-
-    <DIV class="pMKC2">
-        <p>
-            O marketing de Conteúdo é uma estratégia muito interessante e eficaz que foca em atrair os clientes através
-            da criação e
-            postagem de conteúdos relevantes que chamam a atenção e que geralmente servem para “resolver” algum tipo de
-            problema ou proporcionar conhecimento,
-            tudo voltado para as necessidades específicas do público-alvo.
-        </p>
-    </DIV>
-    </br>
-
-    <DIV class="pMKC2">
-        <p>
-            Com isso, o consumidor se torna mais próximo da marca, uma vez que se sente “visto” e pode até mesmo
-            tornar-se um cliente fiel da mesma. Além disso,
-            o conteúdo útil pode ser compartilhado com conhecidos,
-            amigos e familiares da pessoa, aumentando o engajamento e trazendo mais reconhecimento para o negócio.
-        </p>
-    </DIV>
-    </br>
+  </br>
 
 
-    <DIV class="ImgMarMKC">
-        <img src="IMG7.jfif" class="ImgMKC" >
-    </DIV>
-    </br> </br>
+  <DIV class="pMKC2">
+    <p>
+      O marketing de Conteúdo é uma estratégia muito interessante e eficaz que foca em atrair os clientes através
+      da criação e
+      postagem de conteúdos relevantes que chamam a atenção e que geralmente servem para “resolver” algum tipo de
+      problema ou proporcionar conhecimento,
+      tudo voltado para as necessidades específicas do público-alvo.
+    </p>
+  </DIV>
+  </br>
+
+  <DIV class="pMKC2">
+    <p>
+      Com isso, o consumidor se torna mais próximo da marca, uma vez que se sente “visto” e pode até mesmo
+      tornar-se um cliente fiel da mesma. Além disso,
+      o conteúdo útil pode ser compartilhado com conhecidos,
+      amigos e familiares da pessoa, aumentando o engajamento e trazendo mais reconhecimento para o negócio.
+    </p>
+  </DIV>
+  </br>
 
 
-
-    <div class="Titulo2MKC">
-        <H3> Por quais meios o marketing de conteúdo acontece?</h3>
-    </div>
-
-    </br>
-
-    <DIV class="pMKC">
-        <p>
-
-            <li> Posts nas redes sociais em formato de vídeos, fotos, gifs, memes;</li>
-
-            <li> Podcasts;</li>
-
-            <li> E-books;</li>
-
-            <li> Músicas;</li>
-            <li> Blogs.</li>
-            </br>
-            Apesar dessas informações, para que essa estratégia tenha êxito, é necessário que antes alguns pontos sejam
-            levantados e estudados:
-
-        </p>
-    </DIV>
-    </br>
-
-    <DIV class="pMKC">
-        <p>
-            <li> <b>Planejamento: </b> Deve-se planejar minunciosamente quem será a equipe responsável e por quais
-                tarefas cada um dos integrantes ficará responsável,
-                focando na organização e na fluidez do processo.
-            </li>
-
-            </br>
-
-            <li> <b>Elaboração da Persona:</b> A persona é uma representação fictícia do cliente considerado “ideal”
-                para a marca, tendo como base dados reais sobre as características e comportamentos desses clientes,
-                como por exemplo o que os motivam,
-                quais são seus desafios, preocupações e necessidades.
-
-                </br>
-
-                Assim que a persona é estabelecida, fica mais fácil decidir quais tipos de conteúdo devem ser produzidos
-                e publicados.
-
-            </li>
-            </br>
-            <li><B> Desenvolvimento do conteúdo: </B>
-
-                Como dito antes, os conteúdos podem ser desenvolvidos através de blogs, e-books, e-mails, podcasts e
-                posts em redes sociais, como vídeos, fotos, memes e músicas. Os conteúdos devem ser agradáveis ao
-                público,
-                fazer a diferença de alguma forma e ter informações relevantes com assuntos e soluções para problemas.
-
-            </li>
-            </br>
-
-            <li><B> Distribuição do conteúdo: </B>
-
-                Além de produzidos, os conteúdos devem ser publicados em canais estratégicos onde o público-alvo esteja
-                presente em maior massa, como nas redes sociais.
-            </li>
-            </br>
-            <li><b> Analisar os resultados: </b>
-                Esta etapa serve como métrica para que os envolvidos nessa estratégia de marketing tenham noção e
-                acompanhem os resultados que foram obtidos até o momento presente,
-                analisando e pontuando o que está dando um retorno positivo e o que precisa ser melhorado, ou até mesmo
-                descartado.
-
-
-                </br>
-
-                Pode-se obter respostas através de como está o engajamento dos conteúdos, se o engajamento for positivo
-                (quantidade satisfatória de likes,
-                comentários e compartilhamentos) significa que o conteúdo está sendo útil e cativante para o público. Se
-                o engajamento for negativo, significa que algo precisa ser melhorado.
+  <DIV class="ImgMarMKC">
+    <img src="IMG7.jfif" class="ImgMKC">
+  </DIV>
+  </br> </br>
 
 
 
-            </li>
+  <div class="Titulo2MKC">
+    <H3> Por quais meios o marketing de conteúdo acontece?</h3>
+  </div>
+
+  </br>
+
+  <DIV class="pMKC">
+    <p>
+
+      <li> Posts nas redes sociais em formato de vídeos, fotos, gifs, memes;</li>
+
+      <li> Podcasts;</li>
+
+      <li> E-books;</li>
+
+      <li> Músicas;</li>
+      <li> Blogs.</li>
+      </br>
+      Apesar dessas informações, para que essa estratégia tenha êxito, é necessário que antes alguns pontos sejam
+      levantados e estudados:
+
+    </p>
+  </DIV>
+  </br>
+
+  <DIV class="pMKC">
+    <p>
+      <li> <b>Planejamento: </b> Deve-se planejar minunciosamente quem será a equipe responsável e por quais
+        tarefas cada um dos integrantes ficará responsável,
+        focando na organização e na fluidez do processo.
+      </li>
+
+      </br>
+
+      <li> <b>Elaboração da Persona:</b> A persona é uma representação fictícia do cliente considerado “ideal”
+        para a marca, tendo como base dados reais sobre as características e comportamentos desses clientes,
+        como por exemplo o que os motivam,
+        quais são seus desafios, preocupações e necessidades.
+
+        </br>
+
+        Assim que a persona é estabelecida, fica mais fácil decidir quais tipos de conteúdo devem ser produzidos
+        e publicados.
+
+      </li>
+      </br>
+      <li><B> Desenvolvimento do conteúdo: </B>
+
+        Como dito antes, os conteúdos podem ser desenvolvidos através de blogs, e-books, e-mails, podcasts e
+        posts em redes sociais, como vídeos, fotos, memes e músicas. Os conteúdos devem ser agradáveis ao
+        público,
+        fazer a diferença de alguma forma e ter informações relevantes com assuntos e soluções para problemas.
+
+      </li>
+      </br>
+
+      <li><B> Distribuição do conteúdo: </B>
+
+        Além de produzidos, os conteúdos devem ser publicados em canais estratégicos onde o público-alvo esteja
+        presente em maior massa, como nas redes sociais.
+      </li>
+      </br>
+      <li><b> Analisar os resultados: </b>
+        Esta etapa serve como métrica para que os envolvidos nessa estratégia de marketing tenham noção e
+        acompanhem os resultados que foram obtidos até o momento presente,
+        analisando e pontuando o que está dando um retorno positivo e o que precisa ser melhorado, ou até mesmo
+        descartado.
 
 
-        </p>
+        </br>
 
-
-    </DIV>
-    </br>
-
-    </br>
-
-
-
-    <div class="voltaMKC">
-        <a href="TelaIncial.html">
-            <button class="voltar2MKC">
-                Voltar
-            </button>
-        </a>
-
-    </div>
+        Pode-se obter respostas através de como está o engajamento dos conteúdos, se o engajamento for positivo
+        (quantidade satisfatória de likes,
+        comentários e compartilhamentos) significa que o conteúdo está sendo útil e cativante para o público. Se
+        o engajamento for negativo, significa que algo precisa ser melhorado.
 
 
 
+      </li>
+
+
+    </p>
+
+
+  </DIV>
+  </br>
+
+  </br>
+
+
+
+  <div class="voltaMKC">
+    <a href="TelaIncial.html">
+      <button class="voltar2MKC">
+        Voltar
+      </button>
+    </a>
+
+  </div>
 
 
 
@@ -562,9 +561,12 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="MKT.js"></script>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="MKT.js"></script>
 
 </body>
 
