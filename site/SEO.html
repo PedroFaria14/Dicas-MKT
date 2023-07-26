@@ -1,730 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
-  <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
-  <title> SEO</title>
-
-  <link rel="Website icon"  type="png"
-  href="a.png">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-    }
-
-    body {
-      background: white;
-      overflow-x: hidden;
-    }
-
-    /* logo */
-
-    .logo {
-      width: 100%;
-      height: 100%;
-      left: 70%;
-      top: -9vh;
-      position: relative;
-    }
-
-    /* Container da navbar */
-
-    .Conteiner {
-      width: 260px;
-      margin: 0px auto;
-      margin-right: 100%;
-    }
-
-    .colors {
-      background: #2a7ca3;
-    }
-
-    /* Menu */
-
-    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      outline: 0;
-    }
-
-    .Vai-e-Volta-Menu {
-      min-width: 260px;
-      float: left;
-      position: relative;
-      box-shadow: 0 30px 50px #2a7ca3;
-    }
-
-    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
-    .Vai-e-Volta-Menu .Menu-Baixo {
-      width: 100%;
-      height: 50px;
-      padding-left: 22px;
-      float: left;
-      font-weight: 600;
-      color: #f0f0f0;
-      background: #2a7ca3;
-    }
-
-    .Vai-e-Volta-Menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .Vai-e-Volta-Menu ul li a {
-      width: 100%;
-      padding: 14px 22px;
-      float: left;
-      text-decoration: none;
-      color: #f0f0f0;
-      font-size: 13px;
-      background: #2a7ca3;
-      white-space: nowrap;
-      position: relative;
-      overflow: hidden;
-      transition: color .2s linear, background .2s linear;
-      -moz-transition: color .2s linear, background .2s linear;
-      -webkit-transition: color .2s linear, background .2s linear;
-      transition: color .2s linear, background .2s linear;
-    }
-
-    .Vai-e-Volta-Menu>ul>li.active>a,
-    .Vai-e-Volta-Menu>ul>li:hover>a {
-      color: #fff;
-      background: #2986b1;
-    }
-
-    .Vai-e-Volta-Menu ul li a i {
-      width: 34px;
-      float: left;
-      line-height: 18px;
-      font-size: 16px;
-      text-align: left;
-    }
-
-    .Vai-e-Volta-Menu .submenu-indicator {
-      float: right;
-      right: 22px;
-      position: absolute;
-      line-height: 19px;
-      font-size: 20px;
-      transition: transform .3s linear;
-      -moz-transition: transform .3s linear;
-      -webkit-transition: transform .3s linear;
-      -ms-transition: transform .3s linear;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-      line-height: 16px;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-      line-height: 16px;
-    }
-
-    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-      -ms-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-      line-height: 16px;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-      line-height: 16px;
-    }
-
-    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-      -ms-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu,
-    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
-      width: 100%;
-      display: none;
-      position: static;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu li {
-      clear: both;
-      width: 100%;
-    }
-
-    /* Cor de dentro da categoria */
-
-    .Vai-e-Volta-Menu ul ul.submenu li a {
-      width: 100%;
-      float: left;
-      font-size: 11px;
-      background: #2986b1;
-      border: black;
-      position: relative;
-
-      -o-transition: border .2s linear;
-      -moz-transition: border .2s linear;
-      -webkit-transition: border .2s linear;
-      transition: border .2s linear;
-    }
-
-    /* Default styles */
-
-    .Tituloseo {
-      left: 40%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 0vh;
-    }
-
-    .TituloseoSEO1 {
-      left: 30%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 3vh;
-    }
-
-    .SubTituloseoSEO {
-      margin-left: 25%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 3vh
-    }
-
-    .pSEO {
-      margin-left: 25%;
-      margin-right: 25%;
-      position: relative;
-      top: 3vh
-    }
-
-    .Tituloseo2SEO {
-      margin-left: 30%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 3vh
-    }
-
-    .Tituloseo3SEO {
-      left: 26%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 3vh
-    }
-
-    .Tituloseo4SEO {
-      margin-left: 35%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 3vh
-    }
-
-    .Tituloseo5SEO {
-      left: 34%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 3vh
-    }
-
-
-
-    .voltar2SEO {
-      color: white;
-      background-color: rgb(57, 127, 233);
-      border: 2px solid rgb(57, 127, 233);
-      border-radius: 3em;
-      width: 100px;
-      margin-right: 100%;
-    }
-
-    .LogoSEO {
-      height: 100%;
-    }
-
-
-    .voltaSEO {
-      left: 71%;
-      color: white;
-      right: 25.4%;
-      border-radius: 3em;
-
-      position: relative;
-      text-decoration: none;
-
-      font-weight: 700;
-      font-size: 1rem;
-      top: 10VH;
-    }
-
-    .voltar2SEO {
-      color: white;
-      background-color: rgb(57, 127, 233);
-      border: 2px solid rgb(57, 127, 233);
-      border-radius: 3em;
-      margin-bottom: 5vh;
-      width: 100px;
-      right: 100%;
-    }
-
-    .LogoSEO {
-      width: 260px;
-    }
-
-    @media screen and (max-width: 1100px) {
-
-      .pSEO,
-      .SubTituloseoSEO {
-        margin-left: 100%;
-        margin-right: 10%;
-      }
-
-      .TituloseoSEO1 {
-        left: 20%;
-        margin-left: 0;
-        margin-right: 0;
-      }
-
-
-
-      .Tituloseo4SEO,
-
-      .Tituloseo5SEO,
-      .SubTituloseoSEO,
-      .pSEO,
-      .TituloseoSEO1,
-      .Tituloseo3SEO {
-        margin-left: 35%;
-        margin-right: 10%;
-      }
-
-
-      .Tituloseo4SEO,
-      .Tituloseo3SEO,
-      .Tituloseo5SEO {
-        left: 0;
-      }
-
-      .voltar2SEO {
-        top: -50%;
-        left: 100%;
-        margin-right: 0;
-        margin: 0;
-        margin-left: 10%;
-        margin-bottom: 10%;
-      }
-
-      .Tituloseo3SEO {
-        left: 45%;
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .TituloseoSEO1,
-      .Tituloseo4SEO,
-      .Tituloseo3SEO,
-      .Tituloseo5SEO,
-      .SubTituloseoSEO,
-      .pSEO,
-      .Tituloseo3SEO {
-        margin-left: 10%;
-        margin-right: 10%;
-      }
-
-
-
-      .TituloseoSEO1,
-      .Tituloseo4SEO {
-        left: 10%;
-      }
-
-      .Tituloseo3SEO {
-        left: 0;
-      }
-
-      .Tituloseo5SEO {
-        left: 10%;
-      }
-
-
-    }
-  </style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cw9cPZmuX68HtFhwnyRz+u6dUtLL8Afs4J2e91t3D6O7a1Zt27oiWZNBi6I7jZSFL6Y5DQJBlpdlL+izvqA+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
+<body class="">
+  <main>
+    <div class="nav-img">
 
-<body>
-  <!--   Codigo tabela canto -->
-  <div class="Conteiner">
+    <header class="header">
+        <nav>
+          
+            <input type="checkbox" class="menu-btn " id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="header-menu">
+                <li><a href="index.HTML"></i>Inicio </a></li>
 
-    <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+          
+                <li>
+                  <div class="dropdownlink" id="dropdown-categorias">
+                    <a class="fa fa-paper-plane" aria-hidden="true">Categorias</a>
+                   
+                  </div>
+                  <ul class="sub-menu">
+                    <li><a href="Marketing.html" class="Categoria">Marketing Digital</a></li>
+                    <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria">Marketing De Conteúdo</a></li>
+                    <li><a href="Co-Marketing.HTML" class="Categoria">Co-Marketing</a></li>
+                    <li><a href="SEO.html" class="Categoria">SEO</a></li>
+                  </ul>
+                </li>
+                
+                
+    
+                <li><a href="persona.html"></i>Persona </a></li>
+                <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+                <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+                <li><a href="contato.html"></i>Entre em Contato</a></li>
+              </ul>
+        </nav>
+    </header>
 
-      <div class="header"><img src="logoC.jpeg" class="LogoSEO"> </div>
-      <ul>
-        <ul>
+    <article class="hero-conteudo">
 
-
-          <li><a href="TelaIncial.html"></i>Inicio </a></li>
-          <li><a href="#"></i>Categorias </a>
-            <ul class="submenu">
-              <li><a href="Marketing .html" class="Categoria">
-                  Marketing Digital </a></li>
-              <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
-              <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
-              <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
-              <li><a href="SEO.html" class="Categoria"> SEO </a></li>
-            </ul>
-          </li>
-
-          <li><a href="persona.html"></i>Persona </a></li>
-          <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
-          <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
-          <li><a href="contato.html"></i>Entre em Contato</a></li>
-        </ul>
-        <div class="Menu-Baixo"> </div>
+    <div class="img-logo" >
+      <a href="index.html"><img src="a.png" alt="Logotipo MKT"></a>
     </div>
   </div>
 
-
-
-
-  <!--   Codigo tela seo -->
-
-
-  <!--   tITULOseo -->
-
-  <div class="TituloseoSEO1">
-    <H3> O que é SEO?</h3>
-  </div>
-
-  </br>
-
-
-  <DIV class="pSEO">
-    <p>
-      O SEO é composto por um conjunto de recursos usados para otimizar os sites para que eles apareçam mais
-      alto no ranking dos mecanismos de busca e obtenham mais tráfego orgânico.
-      </br> </br>
-
-      É o processo de organizar o conteúdo de um site por tópicos, o que ajuda os mecanismos de pesquisa, como o Google,
-      a entenderem a intenção do usuário durante a pesquisa. Ao otimizar uma página da web por meio de tópicos e
-      palavras-chave dentro desses tópicos,
-      você melhora a experiência do usuário.
-
-    </p>
-  </DIV>
-  </br>
-  <div class="Tituloseo4SEO">
-    <H3> Qual é a importância das técnicas de SEO?</h3>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      A importância do SEO está pautada na potencialização da sua página na Internet,
-      é por meio dessas técnicas que você consegue conquistar para o seu site mais visibilidade,
-      aumentar a quantidade de acessos e fazer com que sua marca seja mais confiável.
-
-      </br> </br>
-      Investir nessa estratégia significa conquistar um desempenho diferenciado.
-      Com isso, o seu site passará a gerar bons resultados ao longo do tempo e em escala, permitindo mais lucratividade
-      e retorno.
-    </p>
-  </DIV>
-  </br>
-  <div class="Tituloseo3SEO">
-    <H3> Quais as técnicas de SEO?</h3>
-  </div>
-
-  </br>
-  <div class="SubTituloseoSEO">
-    <H5> SEO na página ou on page</h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Se concentra no conteúdo da página e em como o otimizar para ajudar o site a subir no ranking de palavras-chave
-      específicas.
-      Nesse caso, as técnicas são aplicadas aos diferentes elementos que fazem parte da página desde o texto, passando
-      pelas imagens até os links. Para isso,
-      são utilizados recursos como o planejamento de palavras-chave, alt text nas imagens, clusters de SEO e outros.
-    </p>
-  </DIV>
-
-  </br>
-
-  <div class="SubTituloseoSEO">
-    <H5> SEO fora da página ou off page</h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Concentra-se nos links que direcionam para os sites de outros lugares na Internet. O número de backlinks e as
-      origens desses links ajudam
-      a criar confiança aos olhos do mecanismo de busca. Sem o SEO off page,
-      é bem provável que você tenha problemas para se posicionar quando as palavras-chave forem mais competitivas.
-    </p>
-  </DIV>
-
-  </br>
-
-  <div class="SubTituloseoSEO">
-    <H5> SEO local </h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Um conjunto de estratégias que objetivam melhorar o posicionamento nos buscadores,
-      tendo como foco as buscas que acontecem regionalmente. Por exemplo: se uma pessoa procura uma padaria no Google,
-      o buscador entende que ela procura algo perto e ativa seu algoritmo para encontrar locais a partir do endereço de
-      pesquisa.
-      A ideia é melhorar a experiência de busca dos usuários e aumentar a visibilidade na região,e também atrair novos
-      públicos.
-    </p>
-  </DIV>
-
-  </br>
-
-
-  <div class="SubTituloseoSEO">
-    <H5> SEO técnico </h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Concentra-se na arquitetura de um site e examina o backend daquele endereço, para ver como cada página está
-      configurada tecnicamente.
-      Para o Google, o código de um site é tão importante quanto o seu conteúdo,
-      o que torna essa especialidade bastante importante para o ranking de um site no mecanismo de busca.
-      </br> </br>
-      Embora influencie no ranqueamento, o maior objetivo do SEO técnico é permitir o rastreamento e a indexação do
-      site.
-      É muito importante que, antes de seguir por qualquer outra estratégia de SEO,
-      a questão técnica seja revisitada, pois isso garantirá que os links das suas páginas serão encontrados pelo
-      Google.
-    </p>
-  </DIV>
-
-  </br>
-
-  <div class="Tituloseo5SEO">
-    <H3> Como criar uma estratégia de conteúdo e SEO?</h3>
-  </div>
-
-  </br>
-
-  <div class="SubTituloseoSEO">
-    <H5> 1. Faça uma lista de assuntos </h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      As palavras-chave são a base do SEO, mas não são mais o primeiro passo para o crescimento orgânico. Faça,
-      portanto,
-      uma lista de assuntos para falar a cada mês. Compile uma lista de até 10 palavras e termos associados ao seu
-      produto ou serviço. Use uma ferramenta de SEO, como:
-      Keyword Tool, do Google, Ahrefs, SEMRush ou GrowthBar,
-      para identificar o volume de pesquisa relacionado a elas e pensar em variações que façam sentido para a sua
-      empresa.
-    </p>
-  </DIV>
-
-  </br>
-
-
-  <div class="SubTituloseoSEO">
-    <H5> 2. Faça uma lista de palavras-chave de cauda longa com base nesses assuntos </h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Para cada pilar que você identificar, use a ferramenta de palavras-chave para identificar de 5 a 10 palavras de
-      cauda longa que aprofundem os termos do assunto original.
-      </br> </br>
-      Use subtópicos para bolar ideias de blogposts ou páginas que expliquem um conceito específico dentro de cada
-      assunto maior que você identificou na etapa.
-      Esses subtópicos, juntos, formam um cluster.
-      Se você tiver 10 assuntos pilares, cada um deve ser preparado para dar suporte a um cluster de 5 ou 10 subtópicos.
-      </br> </br>
-      As páginas que abordam assuntos correlatos de um tópico geral são vistas como a melhor resposta para a consulta de
-      uma pessoa e aparecerão melhor no ranking.
-
-    </p>
-  </DIV>
-
-  </br>
-
-  <div class="SubTituloseoSEO">
-    <H5> 3. Crie páginas para cada assunto </h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Pegue os 10 assuntos pilares que você criou na etapa 1 e crie uma página para cada,
-      que explique o assunto usando as palavras de cauda longa que você pensou para cada cluster na etapa 2.
-      Pense em cada página pilar como um índice, onde você mostrará ao leitor os subtópicos que abordará no post.
-
-      </br> </br>
-
-      Use a sua lista de palavras-chave para determinar quantas páginas pilares diferentes você deve criar. O número de
-      assuntos deve coincidir com o número de produtos,
-      ofertas e locais que a sua empresa tem.
-      Com isso, será muito mais fácil para seus prospects e clientes encontrarem a sua empresa nos mecanismos de busca.
-
-      </br> </br>
-      Cada página precisa incluir conteúdo relevante para seus prospects e clientes, além de imagens e links para as
-      páginas do seu site, de forma a melhorar a experiência do usuário.
-
-    </p>
-  </DIV>
-
-  </br>
-
-
-
-
-  <div class="SubTituloseoSEO">
-    <H5>4. Crie um blog</h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-
-      Um blog é um ótimo jeito de classificar palavras-chave e envolver os usuários do seu site, afinal, cada post de
-      blog é uma nova página,
-      que dá outra chance da sua empresa subir nos rankings de pesquisa.
-      </br> </br>
-
-      Conforme você escreve cada post e preenche seus clusters, é importante ter 3 coisas em mente. Em primeiro lugar,
-      não inclua a palavra-chave de cauda longa mais de 3 ou 4 vezes ao longo da página.
-      O Google não considera uma correspondência exata de palavra-chave com tanta frequência quanto antes.
-
-      </br> </br>
-
-      Em segundo lugar, vincule seu conteúdo à página pilar que você criou sobre o assunto, você pode fazer isso por
-      meio de tags do seu próprio sistema de gestão.
-
-      </br> </br>
-
-      Depois de publicar cada post, vincule-o à página pilar que dá suporte a esse subtópico. Encontre o ponto na sua
-      página pilar que apresenta esse subtópico e faça o link.
-
-
-      </br> </br>
-
-      Ao conectar tanto a página pilar quanto o cluster dessa forma, você estará dizendo ao Google que existe uma
-      relação
-      entre a palavra-chave de cauda longa e o assunto principal para o qual você quer classificar seu site.
-    </p>
-  </DIV>
-
-  </br>
-
-  <div class="SubTituloseoSEO">
-    <H5> 5. Publique toda semana para desenvolver autoridade de página</h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      Escreva sobre o que é de interesse dos seus prospects, inclua as palavras-chave relevantes e o público começará,
-      aos poucos, a notar e clicar no seu conteúdo.
-      </br> </br>
-
-      Os assuntos não terão a mesma importância, e conforme seus clusters forem evoluindo, você precisará priorizá-los
-      com base nas necessidades da sua empresa. Faça uma lista de todas as páginas que você gostaria de criar e
-      classifique-as em ordem de importância. Depois, desenvolva um cronograma e um plano de ataque para criar essas
-      páginas.
-      Mantenha essa lista atualizada e com prioridades definidas, de modo que cada página ajude você a alcançar seus
-      objetivos.
-
-    </p>
-  </DIV>
-
-  </br>
-
-  <div class="SubTituloseoSEO">
-    <H5> 6. Crie um plano de construção de links</h5>
-  </div>
-
-  </br>
-
-  <DIV class="pSEO">
-    <p>
-      A construção de links é o processo de atrair links de entrada para o seu site de outro lugar na web. Como regra
-      geral, quanto mais autoridade de página o site de origem tiver,
-      maior será o efeito dele no ranking da página à qual está ligado.
-
-      </br> </br>
-
-      Compartilhe seus links com outras empresas da sua cidade em troca de links nos sites deles, por exemplo.
-      Escreva alguns blogposts e compartilhe no Twitter, no Facebook, no Instagram e no LinkedIn.
-
-    </p>
-  </DIV>
-
-  </br>
-
-  </br>
-
-
-
-  <div class="voltaSEO">
-    <a href="TelaIncial.html">
-      <button class="voltar2SEO">
-        Voltar
-      </button>
-    </a>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="MKT.js"></script>
-
+   <section class="hero">
+
+    <div class="hero-title">
+        <h1>O que é SEO?</h1>
+    </div>
+
+    <div class= "hero-p">
+        <p>
+        O SEO é composto por um conjunto de recursos usados para otimizar os sites para que eles apareçam mais
+        alto no ranking dos mecanismos de busca e obtenham mais tráfego orgânico.
+        </br> </br>
+  
+        É o processo de organizar o conteúdo de um site por tópicos, o que ajuda os mecanismos de pesquisa, como o Google,
+        a entenderem a intenção do usuário durante a pesquisa. Ao otimizar uma página da web por meio de tópicos e
+        palavras-chave dentro desses tópicos,
+        você melhora a experiência do usuário.
+  
+      </p>
+
+           
+    </div>
+     
+
+   </section>
+
+
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2> Qual é a importância das técnicas de SEO?</h2>
+    </div>
+
+    <div class= "hero-p">
+        <p>
+            A importância do SEO está pautada na potencialização da sua página na Internet,
+            é por meio dessas técnicas que você consegue conquistar para o seu site mais visibilidade,
+            aumentar a quantidade de acessos e fazer com que sua marca seja mais confiável.
+      
+            </br> </br>
+            Investir nessa estratégia significa conquistar um desempenho diferenciado.
+            Com isso, o seu site passará a gerar bons resultados ao longo do tempo e em escala, permitindo mais lucratividade
+            e retorno.
+          </p>
+    </div>
+      
+   </section>
+
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2>  Quais as técnicas de SEO?</h2>
+    </div>
+
+    <div class= "hero-p">
+        <H5> SEO na página ou on page</h5>
+            <p>
+                Se concentra no conteúdo da página e em como o otimizar para ajudar o site a subir no ranking de palavras-chave
+                específicas.
+                Nesse caso, as técnicas são aplicadas aos diferentes elementos que fazem parte da página desde o texto, passando
+                pelas imagens até os links. Para isso,
+                são utilizados recursos como o planejamento de palavras-chave, alt text nas imagens, clusters de SEO e outros.
+              </p>
+    </div>
+      
+   </section>
+
+   <section class="hero">
+
+ 
+
+    <div class= "hero-p">
+        <H5> SEO fora da página ou off page</h5>
+            <p>
+                Concentra-se nos links que direcionam para os sites de outros lugares na Internet. O número de backlinks e as
+                origens desses links ajudam
+                a criar confiança aos olhos do mecanismo de busca. Sem o SEO off page,
+                é bem provável que você tenha problemas para se posicionar quando as palavras-chave forem mais competitivas.
+              </p>
+    </div>
+      
+   </section>
+
+   <section class="hero">
+
+ 
+
+    <div class= "hero-p">
+        <H5> SEO local </h5>
+            Um conjunto de estratégias que objetivam melhorar o posicionamento nos buscadores,
+            tendo como foco as buscas que acontecem regionalmente. Por exemplo: se uma pessoa procura uma padaria no Google,
+            o buscador entende que ela procura algo perto e ativa seu algoritmo para encontrar locais a partir do endereço de
+            pesquisa.
+            A ideia é melhorar a experiência de busca dos usuários e aumentar a visibilidade na região,e também atrair novos
+            públicos.
+          </p>
+    </div>
+      
+   </section>
+
+   <section class="hero">
+
+  
+    <div class= "hero-p">
+        <H5> SEO técnico </h5>
+            <p>
+                Concentra-se na arquitetura de um site e examina o backend daquele endereço, para ver como cada página está
+                configurada tecnicamente.
+                Para o Google, o código de um site é tão importante quanto o seu conteúdo,
+                o que torna essa especialidade bastante importante para o ranking de um site no mecanismo de busca.
+                </br> </br>
+                Embora influencie no ranqueamento, o maior objetivo do SEO técnico é permitir o rastreamento e a indexação do
+                site.
+                É muito importante que, antes de seguir por qualquer outra estratégia de SEO,
+                a questão técnica seja revisitada, pois isso garantirá que os links das suas páginas serão encontrados pelo
+                Google.
+              </p>
+      
+   </section>
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2>  Como criar uma estratégia de conteúdo e SEO? </h2>
+    </div>
+
+    <div class= "hero-p">
+        <H5> 1. Faça uma lista de assuntos </h5>
+            <p>
+                As palavras-chave são a base do SEO, mas não são mais o primeiro passo para o crescimento orgânico. Faça,
+                portanto,
+                uma lista de assuntos para falar a cada mês. Compile uma lista de até 10 palavras e termos associados ao seu
+                produto ou serviço. Use uma ferramenta de SEO, como:
+                Keyword Tool, do Google, Ahrefs, SEMRush ou GrowthBar,
+                para identificar o volume de pesquisa relacionado a elas e pensar em variações que façam sentido para a sua
+                empresa.
+              </p>
+    </div>
+      
+   </section>
+
+   <section class="hero">
+
+    <div class="hero-title">
+    
+    </div>
+
+    <div class= "hero-p">
+        <H5> 2. Faça uma lista de palavras-chave de cauda longa com base nesses assuntos </h5>
+
+            <p>
+                Para cada pilar que você identificar, use a ferramenta de palavras-chave para identificar de 5 a 10 palavras de
+                cauda longa que aprofundem os termos do assunto original.
+                </br> </br>
+                Use subtópicos para bolar ideias de blogposts ou páginas que expliquem um conceito específico dentro de cada
+                assunto maior que você identificou na etapa.
+                Esses subtópicos, juntos, formam um cluster.
+                Se você tiver 10 assuntos pilares, cada um deve ser preparado para dar suporte a um cluster de 5 ou 10 subtópicos.
+                </br> </br>
+                As páginas que abordam assuntos correlatos de um tópico geral são vistas como a melhor resposta para a consulta de
+                uma pessoa e aparecerão melhor no ranking.
+          
+              </p>
+    </div>
+      
+   </section>
+
+   <section class="hero">
+
+   <div class= "hero-p">
+    <H5>  3. Crie páginas para cada assunto </h5>
+
+        <p>
+            Pegue os 10 assuntos pilares que você criou na etapa 1 e crie uma página para cada,
+            que explique o assunto usando as palavras de cauda longa que você pensou para cada cluster na etapa 2.
+            Pense em cada página pilar como um índice, onde você mostrará ao leitor os subtópicos que abordará no post.
+      
+            </br> </br>
+      
+            Use a sua lista de palavras-chave para determinar quantas páginas pilares diferentes você deve criar. O número de
+            assuntos deve coincidir com o número de produtos,
+            ofertas e locais que a sua empresa tem.
+            Com isso, será muito mais fácil para seus prospects e clientes encontrarem a sua empresa nos mecanismos de busca.
+      
+            </br> </br>
+            Cada página precisa incluir conteúdo relevante para seus prospects e clientes, além de imagens e links para as
+            páginas do seu site, de forma a melhorar a experiência do usuário.
+      
+          </p>
+</div>
+  
+</section>
+
+
+<section class="hero">
+
+    <div class= "hero-p">
+     <H5> 4. Crie um blog </h5>
+ 
+        <p>
+
+            Um blog é um ótimo jeito de classificar palavras-chave e envolver os usuários do seu site, afinal, cada post de
+            blog é uma nova página,
+            que dá outra chance da sua empresa subir nos rankings de pesquisa.
+            </br> </br>
+      
+            Conforme você escreve cada post e preenche seus clusters, é importante ter 3 coisas em mente. Em primeiro lugar,
+            não inclua a palavra-chave de cauda longa mais de 3 ou 4 vezes ao longo da página.
+            O Google não considera uma correspondência exata de palavra-chave com tanta frequência quanto antes.
+      
+            </br> </br>
+      
+            Em segundo lugar, vincule seu conteúdo à página pilar que você criou sobre o assunto, você pode fazer isso por
+            meio de tags do seu próprio sistema de gestão.
+      
+            </br> </br>
+      
+            Depois de publicar cada post, vincule-o à página pilar que dá suporte a esse subtópico. Encontre o ponto na sua
+            página pilar que apresenta esse subtópico e faça o link.
+      
+      
+            </br> </br>
+      
+            Ao conectar tanto a página pilar quanto o cluster dessa forma, você estará dizendo ao Google que existe uma
+            relação
+            entre a palavra-chave de cauda longa e o assunto principal para o qual você quer classificar seu site.
+          </p>
+ </div>
+   
+ </section>
+
+ <section class="hero">
+
+ <div class="hero-title">
+    
+ </div>
+
+ <div class= "hero-p">
+     <H5>5. Publique toda semana para desenvolver autoridade de página</h5>
+
+        <p>
+            Escreva sobre o que é de interesse dos seus prospects, inclua as palavras-chave relevantes e o público começará,
+            aos poucos, a notar e clicar no seu conteúdo.
+            </br> </br>
+      
+            Os assuntos não terão a mesma importância, e conforme seus clusters forem evoluindo, você precisará priorizá-los
+            com base nas necessidades da sua empresa. Faça uma lista de todas as páginas que você gostaria de criar e
+            classifique-as em ordem de importância. Depois, desenvolva um cronograma e um plano de ataque para criar essas
+            páginas.
+            Mantenha essa lista atualizada e com prioridades definidas, de modo que cada página ajude você a alcançar seus
+            objetivos.
+      
+          </p>
+ </div>
+   
+</section>
+
+
+<section class="hero">
+
+    <div class="hero-title">
+       
+    </div>
+   
+    <div class= "hero-p">
+        <H5>6. Crie um plano de construção de links</h5>
+   
+            <p>
+                A construção de links é o processo de atrair links de entrada para o seu site de outro lugar na web. Como regra
+                geral, quanto mais autoridade de página o site de origem tiver,
+                maior será o efeito dele no ranking da página à qual está ligado.
+          
+                </br> </br>
+          
+                Compartilhe seus links com outras empresas da sua cidade em troca de links nos sites deles, por exemplo.
+                Escreva alguns blogposts e compartilhe no Twitter, no Facebook, no Instagram e no LinkedIn.
+          
+              </p>
+    </div>
+      
+   </section>
+
+
+ 
+
+
+
+</article>
+   <footer class="hero-button">
+    <a href="index.html">Voltar</a>
+   </footer>
+   
+  </main>
+    <script src="js.js"></script>
+</body>
 </html>

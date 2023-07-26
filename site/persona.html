@@ -1,669 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
-  <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
-  <title> Persona </title>
-
-  <link rel="Website icon"  type="png"
-  href="a.png">
-
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-
-    }
-
-    body {
-      background: white;
-      overflow-x: hidden;
-    }
-
-    /*         logo   */
-    .logo {
-      width: 100%;
-      height: 100%;
-      left: 69%;
-      top: -9vh;
-      position: relative;
-    }
-
-    /*         Conteiner da navbar  */
-
-    .Conteiner {
-      width: 260px;
-      margin: 0px auto;
-      margin-right: 100%;
-
-    }
-
-    .colors {
-      background: #2a7ca3;
-    }
-
-
-
-
-
-    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      outline: 0;
-    }
-
-    /*         Fumaça e tamanho minimo da tebela    */
-
-    .Vai-e-Volta-Menu {
-      min-width: 260px;
-      float: left;
-      position: relative;
-      box-shadow: 0 30px 50px #2a7ca3;
-    }
-
-    /*         Parte de baixo da tebela       */
-
-    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
-    .Vai-e-Volta-Menu .Menu-Baixo {
-      width: 100%;
-      height: 50px;
-      padding-left: 22px;
-      float: left;
-      line-height: 50px;
-      font-weight: 600;
-      color: #f0f0f0;
-      background: #2a7ca3;
-
-
-    }
-
-    /*         Tira as bolinha e mantem sem margim         */
-
-    .Vai-e-Volta-Menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-
-    .Vai-e-Volta-Menu ul li a {
-      width: 100%;
-      padding: 14px 22px;
-      float: left;
-      text-decoration: none;
-      color: #f0f0f0;
-      font-size: 13px;
-      background: #2a7ca3;
-      white-space: nowrap;
-      position: relative;
-      overflow: hidden;
-      transition: color .2s linear, background .2s linear;
-      -moz-transition: color .2s linear, background .2s linear;
-      -webkit-transition: color .2s linear, background .2s linear;
-      transition: color .2s linear, background .2s linear;
-    }
-
-    /*        Animação  de categoria  o  fundo          */
-
-    .Vai-e-Volta-Menu>ul>li.active>a,
-    .Vai-e-Volta-Menu>ul>li:hover>a {
-      color: #fff;
-      background: #2986b1;
-    }
-
-
-
-    .Vai-e-Volta-Menu ul li a i {
-      width: 34px;
-      float: left;
-      line-height: 18px;
-      font-size: 16px;
-      text-align: left;
-    }
-
-    /*         Botão mais de categoria            */
-    .Vai-e-Volta-Menu .submenu-indicator {
-      float: right;
-      right: 22px;
-      position: absolute;
-      line-height: 19px;
-      font-size: 20px;
-      transition: transform .3s linear;
-      -moz-transition: transform .3s linear;
-      -webkit-transition: transform .3s linear;
-      -ms-transition: transform .3s linear;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-      line-height: 16px;
-    }
-
-    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-      -ms-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-
-
-
-    .Vai-e-Volta-Menu ul ul.submenu,
-    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
-      width: 100%;
-      display: none;
-      position: static;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu li {
-      clear: both;
-      width: 100%;
-
-    }
-
-    /*         Cor de dentro da  categoria            */
-
-    .Vai-e-Volta-Menu ul ul.submenu li a {
-      width: 100%;
-      float: left;
-      font-size: 11px;
-      background: #2986b1;
-      border: black;
-      position: relative;
-
-      -o-transition: border .2s linear;
-      -moz-transition: border .2s linear;
-      -webkit-transition: border .2s linear;
-      transition: border .2s linear;
-    }
-
-    .LogoCO {
-      width: 260px;
-    }
-
-
-    .TituloPER {
-      left: 33%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 10vh;
-    }
-
-
-
-
-    .SubTituloPER {
-      margin-left: 25%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 10VH;
-    }
-
-    .paraPER1 {
-      margin-left: 25%;
-      margin-right: 25%;
-      position: relative;
-      top: 10VH;
-    }
-
-    .paraPER {
-      margin-left: 25%;
-      margin-right: 25%;
-      position: relative;
-      top: 10VH;
-    }
-
-    .paraPER2 {
-      margin-left: 25%;
-      margin-right: 25%;
-      position: relative;
-      top: 10VH;
-    }
-
-
-
-
-    /*         tituloCO            */
-
-
-    .TituloPER1 {
-      margin-left: 35%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 10VH;
-    }
-
-    /* Botão*/
-
-    .voltaPER {
-      left: 71%;
-      color: white;
-      margin-right: 25.4%;
-      border-radius: 3em;
-
-      position: relative;
-      text-decoration: none;
-
-      font-weight: 700;
-      font-size: 1rem;
-      top: 20vh;
-
-
-    }
-
-    .voltar2PER {
-      color: white;
-      background-color: rgb(57, 127, 233);
-      border: 2px solid rgb(57, 127, 233);
-      border-radius: 3em;
-      margin-bottom: 5vh;
-      width: 100px;
-      margin-right: 100%;
-    }
-
-
-
-
-
-    @media screen and (max-width: 1100px) {
-
-      .SubTituloPER,
-      .paraPER2 {
-        margin-left: 35%;
-        margin-right: 5%;
-        top: 10vh;
-      }
-
-      .paraPER1 {
-
-        left: 9%;
-        margin-right: 10%;
-        margin-left: 0;
-        top: 8vh;
-      }
-
-      .paraPER {
-
-        left: 35%;
-        margin-right: 38%;
-        margin-left: 0;
-        top: 10vh;
-      }
-
-      .SubTituloPER {
-        top: 10vh;
-
-        margin-right: 0;
-      }
-
-
-
-      .TituloPER {
-        left: 30%;
-        margin: 0;
-        top: -5vh;
-      }
-
-      .voltaparaPER {
-        left: 90%;
-        top: 10vh;
-      }
-
-      .TituloPER {
-        left: 33%;
-        margin-right: 38%;
-        margin-left: 0;
-        top: 5vh;
-      }
-
-      .TituloPER1 {
-        left: 20%;
-        margin-right: 30%;
-        margin-left: 0;
-        top: 9vh;
-      }
-
-      .voltaPER {
-        top: 13vh;
-        margin: 0;
-        left: 90%;
-      }
-    }
-
-
-
-
-    @media screen and (max-width: 768px) {
-
-
-      .SubTituloPER,
-      .paraPER,
-      .Titulo2CO {
-        left: 5%;
-        margin-left: 0;
-        margin-right: 10%;
-      }
-
-      .paraPER2 {
-        margin-left: 60%;
-        margin-right: 0;
-        top: 10vh;
-      }
-
-      .TituloPER {
-        left: 20%;
-        margin-left: 40%;
-        margin-right: 5%;
-      }
-
-
-
-      .voltaparaPER {
-
-        right: auto;
-        transform: translateX(-50%);
-      }
-
-
-
-
-
-      .voltaparaPER {
-        left: 120%;
-      }
-
-      .paraPER {
-        margin-right: 20%;
-      }
-
-      .TituloPER {
-        left: 10%;
-      }
-    }
-  </style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cw9cPZmuX68HtFhwnyRz+u6dUtLL8Afs4J2e91t3D6O7a1Zt27oiWZNBi6I7jZSFL6Y5DQJBlpdlL+izvqA+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
+<body class="">
+  <main>
+    <div class="nav-img">
 
-<body>
-  <!--   Codigo tabela canto -->
-  <div class="Conteiner">
+    <header class="header">
+        <nav>
+          
+            <input type="checkbox" class="menu-btn " id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="header-menu">
+                <li><a href="index.HTML"></i>Inicio </a></li>
 
-    <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+          
+                <li>
+                  <div class="dropdownlink" id="dropdown-categorias">
+                    <a class="fa fa-paper-plane" aria-hidden="true">Categorias</a>
+                   
+                  </div>
+                  <ul class="sub-menu">
+                    <li><a href="Marketing.html" class="Categoria">Marketing Digital</a></li>
+                    <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria">Marketing De Conteúdo</a></li>
+                    <li><a href="Co-Marketing.HTML" class="Categoria">Co-Marketing</a></li>
+                    <li><a href="SEO.html" class="Categoria">SEO</a></li>
+                  </ul>
+                </li>
+                
+                
+    
+                <li><a href="persona.html"></i>Persona </a></li>
+                <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+                <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+                <li><a href="contato.html"></i>Entre em Contato</a></li>
+              </ul>
+        </nav>
+    </header>
 
-      <div class="header"><img src="logoC.jpeg" class="LogoCO"> </div>
-      <ul>
-        <ul>
+    <article class="hero-conteudo">
 
-
-          <li><a href="TelaIncial.html"></i>Inicio </a></li>
-          <li><a href="#"></i>Categorias </a>
-            <ul class="submenu">
-              <li><a href="Marketing .html" class="Categoria">
-                  Marketing Digital </a></li>
-              <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
-              <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
-              <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
-              <li><a href="SEO.html" class="Categoria"> SEO </a></li>
-            </ul>
-          </li>
-
-          <li><a href="persona.html"></i>Persona </a></li>
-          <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
-          <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
-          <li><a href="contato.html"></i>Entre em Contato</a></li>
-        </ul>
-        <div class="Menu-Baixo"> </div>
+    <div class="img-logo" >
+      <a href="index.html"><img src="a.png" alt="Logotipo MKT"></a>
     </div>
   </div>
 
-  <!--   Codigo tela marketing -->
+   <section class="hero">
+
+    <div class="hero-title">
+        <h1>  Persona</h1>
+    </div>
+
+    <div class= "hero-p">
+      <p>
+        A persona é uma representação de seu cliente ideal, e através de informações reais sobre o comportamento e as
+        características demográficas,
+        podemos perceber o perfil do cliente.
+  
+        </br> </br>
+  
+        Sendo assim, a persona é uma espécie de personagem, ou avatar, com nome, idade, motivações, história pessoal,
+        objetivos, desafios, problemas, como uma pessoa de verdade. Entretanto, ao contrário de personagens ficcionais,
+        o avatar é criado com base em dados do público que a empresa deseja alcançar.
+  
+        </br> </br>
+  
+        Unindo todas essas informações, você consegue definir e encontrar maneiras e estratégias paraPER interagir com as
+        pessoas.
+        Sendo possível oferecer soluções mais adequadas aos problemas e desafios de seus clientes.
+      </p>
+    </div>
+     
 
+   </section>
 
 
-  <div class="TituloPER">
-    <H3> Persona</h3>
-  </div>
 
-  </br>
+   <section class="hero">
 
-  <DIV class="paraPER1">
-    <p>
-      A persona é uma representação de seu cliente ideal, e através de informações reais sobre o comportamento e as
-      características demográficas,
-      podemos perceber o perfil do cliente.
+    <div class="hero-title">
+       
+        <H2>  5 dicas de como criar a sua persona</h2>
+    </div>
 
-      </br> </br>
+    <div class= "hero-p">
+      
+    </div>
+      
+   </section>
+
 
-      Sendo assim, a persona é uma espécie de personagem, ou avatar, com nome, idade, motivações, história pessoal,
-      objetivos, desafios, problemas, como uma pessoa de verdade. Entretanto, ao contrário de personagens ficcionais,
-      o avatar é criado com base em dados do público que a empresa deseja alcançar.
+   <section class="hero">
 
-      </br> </br>
+    <div class="hero-title">
+       
+        <H2>  1. Colete dados de clientes</h2>
+    </div>
 
-      Unindo todas essas informações, você consegue definir e encontrar maneiras e estratégias paraPER interagir com as
-      pessoas.
-      Sendo possível oferecer soluções mais adequadas aos problemas e desafios de seus clientes.
-    </p>
-  </DIV>
-  </br>
-
-
-
-
-  <div class="TituloPER1">
-    <H3> 5 dicas de como criar a sua persona</h3>
-  </div>
-
-  </br>
-
-  <div class="SubTituloPER">
-    <H5> 1. Colete dados de clientes </h5>
-  </div>
-
-  </br>
-
-  <DIV class="paraPER2">
-    <p>
-      É necessário definir objetivos, público-alvo e construir um roteiro de perguntas paraPER conhecer melhor seus
-      clientes.
-      Foque em quem já comprou da sua empresa e já percebeu o valor do seu produto.
-    </p>
-  </DIV>
-  </BR>
-
-
-  <div class="SubTituloPER">
-    <H5> 2.Faça as perguntas certas </h5>
-  </div>
-
-
-
-  <DIV class="paraPER">
-    <p>
-      Divida as perguntas em tópicos, como demográfica, pessoal, profissional, consumo de conteúdo, hábitos de compra e
-      relacionamento com a empresa. Exemplos:
-    </p>
-  </DIV>
-
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> Demográfica: </h5>
-  </div>
-
-
-
-  <DIV class="paraPER">
-    <p>
-      <LI> Qual seu gênero?</LI>
-      <LI> Qual sua escolaridade? </LI>
-
-    </p>
-  </DIV>
-  </BR>
-
-
-  <div class="SubTituloPER">
-    <H5> Pessoal/profissional: </h5>
-  </div>
-
-
-
-  <DIV class="paraPER">
-    <p>
-      <LI> Como é sua rotina?</LI>
-      <LI> Quais são suas principais responsabilidades? </LI>
-
-    </p>
-  </DIV>
-
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> Consumo de conteúdo: </h5>
-  </div>
-
-
-
-  <DIV class="paraPER">
-    <p>
-      <LI> Quais redes sociais você usa? </LI>
-      <LI> Como você se mantém informado? </LI>
-
-    </p>
-  </DIV>
-
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> Hábitos de compra: </h5>
-  </div>
-
-
-
-  <DIV class="paraPER">
-    <p>
-      <LI> Quais marcas você costuma usar?</LI>
-      <LI> Como você se informa sobre marcas e produtos? Onde costuma comprar? </LI>
-
-    </p>
-  </DIV>
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> Relação com a empresa: </h5>
-  </div>
-
-
-
-  <DIV class="paraPER">
-    <p>
-      <LI> O que te levou a procurar as soluções da empresa X?</LI>
-      <LI> Como a empresa X te ajuda a solucionar seus desafios? </LI>
-
-      </BR>
-
-      Se baseie nesse tipo de questões paraPER construir o seu questionário, adaptando paraPER o seu segmento e as suas
-      dúvidas sobre os clientes.
-    </p>
-  </DIV>
-
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> 3.Analise os dados coletados </h5>
-  </div>
-
-  </BR>
-
-
-  <DIV class="paraPER">
-    <p>
-      Depois de aplicar a pesquisa, você vai ter vários dados sobre os clientes. Na análise desses dados, procure
-      identificar os padrões nas respostas, eles irão apontar características,
-      problemas, desafios e dúvidas que são comuns a vários clientes e que devem fazer parte da persona.
-    </p>
-  </DIV>
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> 4. Monte a estrutura da persona </h5>
-  </div>
-
-  </BR>
-
-
-  <DIV class="paraPER">
-    <p>
-      A partir dessa análise, a persona ganhará vida. Ela terá nome, rosto e um perfil bem definido. Dessa forma,
-      é importante lembrar que ela terá as características e condutas que você percebeu como mais importantes entre os
-      entrevistados.
-
-
-      </br> </br>
-
-      Essa é a hora de pensar na persona como uma pessoa real, então procure desenvolver um texto descritivo sobre essa
-      pessoa que você está criando.
-    </p>
-  </DIV>
-  </BR>
-
-  <div class="SubTituloPER">
-    <H5> 5.Integre sua equipe com as personas </h5>
-  </div>
-
-  </BR>
-
-
-  <DIV class="paraPER">
-    <p>
-      Incentive sua equipe de marketing a utilizar as personas, envolva toda a equipe em sua criação paraPER entenderem
-      sua importância e planejarem estratégias que as incluam.
-      É preciso focar nela paraPER realizar os planos e estratégias de consumo e venda.
-    </p>
-  </DIV>
-
-
-  </br>
-
-  <div class="voltaPER">
-    <a href="index.html">
-      <button class="voltar2PER">
-
-
-
-        Voltar
-
-      </button>
-    </a>
-
-  </div>
-  </br> </br>
-
-
-
-
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="MKT.js"></script>
-
+    <div class= "hero-p">
+      <p>
+        É necessário definir objetivos, público-alvo e construir um roteiro de perguntas paraPER conhecer melhor seus
+        clientes.
+        Foque em quem já comprou da sua empresa e já percebeu o valor do seu produto.
+      </p>
+    </div>
+      
+   </section>
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2> 2.Faça as perguntas certas</h2>
+    </div>
+
+    <div class= "hero-p">
+      <p>
+        Divida as perguntas em tópicos, como demográfica, pessoal, profissional, consumo de conteúdo, hábitos de compra e
+        relacionamento com a empresa. Exemplos:
+      </p>
+        <h5>Demográfica</h5>
+   
+        <p>
+          • Qual seu gênero?
+          </p>
+          <p> •  Qual sua escolaridade?</p>
+
+
+          <h5> Pessoal/profissional</h5>
+   
+          <p>
+            • Como é sua rotina?
+            </p>
+            <p> • Quais são suas principais responsabilidades?</p>
+
+
+
+            <h5>Consumo de conteúdo: </h5>
+            <p>
+              • Quais redes sociais você usa? 
+              </p>
+              <p> • Como você se mantém informado? </p>
+              
+
+
+              <h5>Hábitos de compra </h5>
+              <p>
+                 • Quais marcas você costuma usar? 
+                </p>
+                <p> • Como você se informa sobre marcas e produtos? Onde costuma comprar? </p>
+
+
+
+
+
+
+                <h5>Relação com a empresa: </h5>
+                <p>
+                  • O que te levou a procurar as soluções da empresa X?
+                  </p>
+                  <p> • Como a empresa X te ajuda a solucionar seus desafios?</p>
+
+                  <p> Se baseie nesse tipo de questões paraPER construir o seu questionário, adaptando paraPER o seu segmento e as suas
+                    dúvidas sobre os clientes.</p>
+    </div>
+      
+   </section>
+
+  
+
+  
+
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2> 3.Analise os dados coletados</h2>
+    </div>
+
+    <div class= "hero-p">
+      <p>
+        Depois de aplicar a pesquisa, você vai ter vários dados sobre os clientes. Na análise desses dados, procure
+        identificar os padrões nas respostas, eles irão apontar características,
+        problemas, desafios e dúvidas que são comuns a vários clientes e que devem fazer parte da persona.
+      </p>
+    </div>
+      
+   </section>
+
+
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2> 4. Monte a estrutura da persona</h2>
+    </div>
+
+    <div class= "hero-p">
+      <p>
+        A partir dessa análise, a persona ganhará vida. Ela terá nome, rosto e um perfil bem definido. Dessa forma,
+        é importante lembrar que ela terá as características e condutas que você percebeu como mais importantes entre os
+        entrevistados.
+  
+  
+        </br> </br>
+  
+        Essa é a hora de pensar na persona como uma pessoa real, então procure desenvolver um texto descritivo sobre essa
+        pessoa que você está criando.
+      </p>
+    </div>
+    
+      
+   </section>
+
+   <section class="hero">
+
+    <div class="hero-title">
+       
+        <H2> 5.Integre sua equipe com as personas</h2>
+    </div>
+
+    <div class= "hero-p">
+      <p>
+        <p>
+          Incentive sua equipe de marketing a utilizar as personas, envolva toda a equipe em sua criação paraPER entenderem
+          sua importância e planejarem estratégias que as incluam.
+          É preciso focar nela paraPER realizar os planos e estratégias de consumo e venda.
+        </p>
+    </div>
+    
+      
+   </section>
+
+
+</article>
+   <footer class="hero-button">
+    <a href="index.html">Voltar</a>
+   </footer>
+   
+  </main>
+    <script src="js.js"></script>
 </body>
-
 </html>

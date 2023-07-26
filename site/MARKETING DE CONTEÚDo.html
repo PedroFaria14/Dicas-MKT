@@ -1,576 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" Conteiner="IE=edge">
-  <meta name="viewport" Conteiner="width=device-width, initial-scale=1.0">
-  <title> Marketing de Conteúdo</title>
-
-  <link rel="Website icon"  type="png"
-  href="a.png">
-
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-
-    }
-
-    body {
-      background: white;
-      overflow-x: hidden;
-    }
-
-    /*         logo   */
-    .logo {
-      width: 100%;
-      height: 100%;
-      left: 69%;
-      top: -9vh;
-      position: relative;
-    }
-
-    /*         Conteiner da navbar  */
-
-    .Conteiner {
-      width: 260px;
-      margin: 0px auto;
-      margin-right: 100%;
-
-    }
-
-    .colors {
-      background: #2a7ca3;
-    }
-
-
-
-
-
-    .Vai-e-Volta-Menu .Vai-e-Volta-Menu * {
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      outline: 0;
-    }
-
-    /*         Fumaça e tamanho minimo da tebela    */
-
-    .Vai-e-Volta-Menu {
-      min-width: 260px;
-      float: left;
-      position: relative;
-      box-shadow: 0 30px 50px #2a7ca3;
-    }
-
-    /*         Parte de baixo da tebela       */
-
-    .Vai-e-Volta-Menu .Vai-e-Volta-Menu-footer,
-    .Vai-e-Volta-Menu .Menu-Baixo {
-      width: 100%;
-      height: 50px;
-      padding-left: 22px;
-      float: left;
-      line-height: 50px;
-      font-weight: 600;
-      color: #f0f0f0;
-      background: #2a7ca3;
-
-
-    }
-
-    /*         Tira as bolinha e mantem sem margim         */
-
-    .Vai-e-Volta-Menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-
-    .Vai-e-Volta-Menu ul li a {
-      width: 100%;
-      padding: 14px 22px;
-      float: left;
-      text-decoration: none;
-      color: #f0f0f0;
-      font-size: 13px;
-      background: #2a7ca3;
-      white-space: nowrap;
-      position: relative;
-      overflow: hidden;
-      transition: color .2s linear, background .2s linear;
-      -moz-transition: color .2s linear, background .2s linear;
-      -webkit-transition: color .2s linear, background .2s linear;
-      transition: color .2s linear, background .2s linear;
-    }
-
-    /*        Animação  de categoria  o  fundo          */
-
-    .Vai-e-Volta-Menu>ul>li.active>a,
-    .Vai-e-Volta-Menu>ul>li:hover>a {
-      color: #fff;
-      background: #2986b1;
-    }
-
-
-
-    .Vai-e-Volta-Menu ul li a i {
-      width: 34px;
-      float: left;
-      line-height: 18px;
-      font-size: 16px;
-      text-align: left;
-    }
-
-    /*         Botão mais de categoria            */
-    .Vai-e-Volta-Menu .submenu-indicator {
-      float: right;
-      right: 22px;
-      position: absolute;
-      line-height: 19px;
-      font-size: 20px;
-      transition: transform .3s linear;
-      -moz-transition: transform .3s linear;
-      -webkit-transition: transform .3s linear;
-      -ms-transition: transform .3s linear;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu .submenu-indicator {
-      line-height: 16px;
-    }
-
-    .Vai-e-Volta-Menu .submenu-indicator-minus>.submenu-indicator {
-      -ms-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
-    }
-
-
-
-    .Vai-e-Volta-Menu ul ul.submenu,
-    .Vai-e-Volta-Menu ul ul.submenu li ul.submenu {
-      width: 100%;
-      display: none;
-      position: static;
-    }
-
-    .Vai-e-Volta-Menu ul ul.submenu li {
-      clear: both;
-      width: 100%;
-
-    }
-
-    /*         Cor de dentro da  categoria            */
-
-    .Vai-e-Volta-Menu ul ul.submenu li a {
-      width: 100%;
-      float: left;
-      font-size: 11px;
-      background: #2986b1;
-      border: black;
-      position: relative;
-
-      -o-transition: border .2s linear;
-      -moz-transition: border .2s linear;
-      -webkit-transition: border .2s linear;
-      transition: border .2s linear;
-    }
-
-    .LogoMKC {
-      width: 260px;
-    }
-
-
-
-    .TituloMKC {
-      left: 25%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 7vh;
-    }
-
-
-
-    .ImgMKC {
-      width: 950pX;
-    }
-
-    .ImgMarMKC {
-      align-items: center;
-      left: 12%;
-      position: relative;
-      top: 10VH;
-
-    }
-
-
-
-    .SubTituloMKC {
-      left: 25%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 7VH;
-    }
-
-    .pMKC {
-      left: 25%;
-      margin-right: 45%;
-      position: relative;
-      top: 7VH;
-    }
-
-    .pMKC2 {
-      left: 13%;
-      margin-right: 40%;
-      position: relative;
-      top: 7VH;
-      margin-left: 0;
-    }
-
-
-
-
-
-    /*         titulo            */
-
-
-    .Titulo2MKC {
-      left: 30%;
-      color: rgb(57, 127, 233);
-      position: relative;
-      top: 10VH;
-    }
-
-    /* Botão*/
-
-    .voltaMKC {
-      left: 71%;
-      color: white;
-      margin-right: 25.4%;
-      border-radius: 3em;
-
-      position: relative;
-      text-decoration: none;
-      margin-bottom: 5vh;
-      font-weight: 700;
-      font-size: 1rem;
-      top: 10vh;
-
-
-    }
-
-    .voltar2MKC {
-      color: white;
-      background-color: rgb(57, 127, 233);
-      border: 2px solid rgb(57, 127, 233);
-      border-radius: 3em;
-      margin-bottom: 5vh;
-      width: 100px;
-      margin-right: 100%;
-    }
-
-    @media screen and (max-width: 1300px) {
-      .ImgMKC {
-        width: 500px;
-      }
-    }
-
-    @media screen and (max-width: 1100px) {
-
-      .SubTituloMKC,
-      .pMKC {
-        margin-left: 100%;
-        margin-right: 10%;
-      }
-
-      .TituloMKC,
-      .SubTituloMKC,
-      .pMKC,
-      .Titulo2MKC {
-        margin-left: 10%;
-        margin-right: 30%;
-      }
-
-      .TituloMKC {
-        margin-right: 0;
-        left: 100vh;
-        margin-left: 30%;
-      }
-
-      .pMKC2 {
-        margin-right: 20%;
-      }
-
-
-
-
-      .TituloMKC {
-        left: 10VH;
-      }
-
-      .voltaMKC {
-        left: 85%;
-        margin-bottom: 10%;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .TituloMKC,
-      .SubTituloMKC,
-      .pMKC,
-      .Titulo2MKC {
-        left: 5%;
-        margin-left: 0;
-        margin-right: 10%;
-      }
-
-      .ImgMKC {
-        width: 100%;
-      }
-
-      .voltaMKC {
-
-        right: auto;
-        transform: translateX(-50%);
-      }
-
-      .img8psC {
-        width: 300px;
-      }
-
-      .ImgMKC {
-        width: 500px;
-      }
-
-      .voltaMKC {
-        left: 120%;
-      }
-
-      .pMKC2 {
-        margin-right: 20%;
-      }
-
-      .TituloMKC {
-        left: 10%;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .voltaMKC {
-        font-size: 0.8rem;
-      }
-
-
-      .ImgMKC {
-        width: 300px;
-      }
-    }
-  </style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cw9cPZmuX68HtFhwnyRz+u6dUtLL8Afs4J2e91t3D6O7a1Zt27oiWZNBi6I7jZSFL6Y5DQJBlpdlL+izvqA+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
+<body class="">
+  <main>
+    <div class="nav-img">
 
-<body>
-  <!--   Codigo tabela canto -->
-  <div class="Conteiner">
+    <header class="header">
+        <nav>
+          
+            <input type="checkbox" class="menu-btn " id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="header-menu">
+                <li><a href="index.HTML"></i>Inicio </a></li>
 
-    <div id="Vai-e-Volta-Menu" class="Vai-e-Volta-Menu">
+          
+                <li>
+                  <div class="dropdownlink" id="dropdown-categorias">
+                    <a class="fa fa-paper-plane" aria-hidden="true">Categorias</a>
+                   
+                  </div>
+                  <ul class="sub-menu">
+                    <li><a href="Marketing.html" class="Categoria">Marketing Digital</a></li>
+                    <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria">Marketing De Conteúdo</a></li>
+                    <li><a href="Co-Marketing.HTML" class="Categoria">Co-Marketing</a></li>
+                    <li><a href="SEO.html" class="Categoria">SEO</a></li>
+                  </ul>
+                </li>
+                
+                
+    
+                <li><a href="persona.html"></i>Persona </a></li>
+                <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
+                <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
+                <li><a href="contato.html"></i>Entre em Contato</a></li>
+              </ul>
+        </nav>
+    </header>
 
-      <div class="header"><img src="logoC.jpeg" class="LogoMKC"> </div>
-      <ul>
-        <ul>
+    <article class="hero-conteudo">
 
-
-          <li><a href="TelaIncial.html"></i>Inicio </a></li>
-          <li><a href="#"></i>Categorias </a>
-            <ul class="submenu">
-              <li><a href="Marketing .html" class="Categoria">
-                  Marketing Digital </a></li>
-              <li><a href="8ps.html" class="Categoria"> 8Ps do Marketing </a></li>
-              <li><a href="MARKETING DE CONTEÚDo.html" class="Categoria"> Marketing De Conteúdo </a></li>
-              <li><a href="Co-Marketing.HTML" class="Categoria"> Co-Marketing </a></li>
-              <li><a href="SEO.html" class="Categoria"> SEO </a></li>
-            </ul>
-          </li>
-
-          <li><a href="persona.html"></i>Persona </a></li>
-          <li><a href="Cursos.html"></i>Cursos Gratuitos </a></li>
-          <li><a href="Materiais.HTMl"></i>Materiais de Auxilio </a></li>
-          <li><a href="contato.html"></i>Entre em Contato</a></li>
-        </ul>
-        <div class="Menu-Baixo"> </div>
+    <div class="img-logo" >
+      <a href="index.html"><img src="a.png" alt="Logotipo MKT"></a>
     </div>
   </div>
 
+   <section class="hero">
 
+    <div class="hero-title">
+        <h1>Marketing de Conteúdo</h1>
+    </div>
 
-  <!--   Codigo tela marketing -->
+    <div class= "hero-p">
+        <p>
+            O marketing de Conteúdo é uma estratégia muito interessante e eficaz que foca em atrair os clientes através
+            da criação e
+            postagem de conteúdos relevantes que chamam a atenção e que geralmente servem para “resolver” algum tipo de
+            problema ou proporcionar conhecimento,
+            tudo voltado para as necessidades específicas do público-alvo.
+          </p>
 
+          <p>
+            Com isso, o consumidor se torna mais próximo da marca, uma vez que se sente “visto” e pode até mesmo
+            tornar-se um cliente fiel da mesma. Além disso,
+            o conteúdo útil pode ser compartilhado com conhecidos,
+            amigos e familiares da pessoa, aumentando o engajamento e trazendo mais reconhecimento para o negócio.
+          </p>
+       
+    </div>
+      <div class="hero-img">
+        <img src="IMG7.jfif" class="ImgMKT">
+      </div>
 
-  <!--   tITULO -->
-
-
-  <div class="TituloMKC">
-    <H3> Marketing de Conteúdo</h3>
-  </div>
-
-  </br>
-
-
-  <DIV class="pMKC2">
-    <p>
-      O marketing de Conteúdo é uma estratégia muito interessante e eficaz que foca em atrair os clientes através
-      da criação e
-      postagem de conteúdos relevantes que chamam a atenção e que geralmente servem para “resolver” algum tipo de
-      problema ou proporcionar conhecimento,
-      tudo voltado para as necessidades específicas do público-alvo.
-    </p>
-  </DIV>
-  </br>
-
-  <DIV class="pMKC2">
-    <p>
-      Com isso, o consumidor se torna mais próximo da marca, uma vez que se sente “visto” e pode até mesmo
-      tornar-se um cliente fiel da mesma. Além disso,
-      o conteúdo útil pode ser compartilhado com conhecidos,
-      amigos e familiares da pessoa, aumentando o engajamento e trazendo mais reconhecimento para o negócio.
-    </p>
-  </DIV>
-  </br>
-
-
-  <DIV class="ImgMarMKC">
-    <img src="IMG7.jfif" class="ImgMKC">
-  </DIV>
-  </br> </br>
+   </section>
 
 
 
-  <div class="Titulo2MKC">
-    <H3> Por quais meios o marketing de conteúdo acontece?</h3>
-  </div>
+   <section class="hero">
 
-  </br>
+    <div class="hero-title">
+       
+        <H2> Por quais meios o marketing de conteúdo acontece?</h2>
+    </div>
 
-  <DIV class="pMKC">
-    <p>
+    <div class= "hero-p">
+        <p>
 
-      <li> Posts nas redes sociais em formato de vídeos, fotos, gifs, memes;</li>
-
-      <li> Podcasts;</li>
-
-      <li> E-books;</li>
-
-      <li> Músicas;</li>
-      <li> Blogs.</li>
-      </br>
-      Apesar dessas informações, para que essa estratégia tenha êxito, é necessário que antes alguns pontos sejam
-      levantados e estudados:
-
-    </p>
-  </DIV>
-  </br>
-
-  <DIV class="pMKC">
-    <p>
-      <li> <b>Planejamento: </b> Deve-se planejar minunciosamente quem será a equipe responsável e por quais
-        tarefas cada um dos integrantes ficará responsável,
-        focando na organização e na fluidez do processo.
-      </li>
-
-      </br>
-
-      <li> <b>Elaboração da Persona:</b> A persona é uma representação fictícia do cliente considerado “ideal”
-        para a marca, tendo como base dados reais sobre as características e comportamentos desses clientes,
-        como por exemplo o que os motivam,
-        quais são seus desafios, preocupações e necessidades.
-
-        </br>
-
-        Assim que a persona é estabelecida, fica mais fácil decidir quais tipos de conteúdo devem ser produzidos
-        e publicados.
-
-      </li>
-      </br>
-      <li><B> Desenvolvimento do conteúdo: </B>
-
-        Como dito antes, os conteúdos podem ser desenvolvidos através de blogs, e-books, e-mails, podcasts e
-        posts em redes sociais, como vídeos, fotos, memes e músicas. Os conteúdos devem ser agradáveis ao
-        público,
-        fazer a diferença de alguma forma e ter informações relevantes com assuntos e soluções para problemas.
-
-      </li>
-      </br>
-
-      <li><B> Distribuição do conteúdo: </B>
-
-        Além de produzidos, os conteúdos devem ser publicados em canais estratégicos onde o público-alvo esteja
-        presente em maior massa, como nas redes sociais.
-      </li>
-      </br>
-      <li><b> Analisar os resultados: </b>
-        Esta etapa serve como métrica para que os envolvidos nessa estratégia de marketing tenham noção e
-        acompanhem os resultados que foram obtidos até o momento presente,
-        analisando e pontuando o que está dando um retorno positivo e o que precisa ser melhorado, ou até mesmo
-        descartado.
+            <li> Posts nas redes sociais em formato de vídeos, fotos, gifs, memes;</li>
+      
+            <li> Podcasts;</li>
+      
+            <li> E-books;</li>
+      
+            <li> Músicas;</li>
+            <li> Blogs.</li>
+            </br>
+            Apesar dessas informações, para que essa estratégia tenha êxito, é necessário que antes alguns pontos sejam
+            levantados e estudados:
+      
+          </p>
 
 
-        </br>
-
-        Pode-se obter respostas através de como está o engajamento dos conteúdos, se o engajamento for positivo
-        (quantidade satisfatória de likes,
-        comentários e compartilhamentos) significa que o conteúdo está sendo útil e cativante para o público. Se
-        o engajamento for negativo, significa que algo precisa ser melhorado.
-
-
-
-      </li>
-
-
-    </p>
-
-
-  </DIV>
-  </br>
-
-  </br>
-
-
-
-  <div class="voltaMKC">
-    <a href="TelaIncial.html">
-      <button class="voltar2MKC">
-        Voltar
-      </button>
-    </a>
-
-  </div>
+          <p>
+            <li> <b>Planejamento: </b> Deve-se planejar minunciosamente quem será a equipe responsável e por quais
+              tarefas cada um dos integrantes ficará responsável,
+              focando na organização e na fluidez do processo.
+            </li>
+      
+            </br>
+      
+            <li> <b>Elaboração da Persona:</b> A persona é uma representação fictícia do cliente considerado “ideal”
+              para a marca, tendo como base dados reais sobre as características e comportamentos desses clientes,
+              como por exemplo o que os motivam,
+              quais são seus desafios, preocupações e necessidades.
+      
+              </br>
+      
+              Assim que a persona é estabelecida, fica mais fácil decidir quais tipos de conteúdo devem ser produzidos
+              e publicados.
+      
+            </li>
+            </br>
+            <li><B> Desenvolvimento do conteúdo: </B>
+      
+              Como dito antes, os conteúdos podem ser desenvolvidos através de blogs, e-books, e-mails, podcasts e
+              posts em redes sociais, como vídeos, fotos, memes e músicas. Os conteúdos devem ser agradáveis ao
+              público,
+              fazer a diferença de alguma forma e ter informações relevantes com assuntos e soluções para problemas.
+      
+            </li>
+            </br>
+      
+            <li><B> Distribuição do conteúdo: </B>
+      
+              Além de produzidos, os conteúdos devem ser publicados em canais estratégicos onde o público-alvo esteja
+              presente em maior massa, como nas redes sociais.
+            </li>
+            </br>
+            <li><b> Analisar os resultados: </b>
+              Esta etapa serve como métrica para que os envolvidos nessa estratégia de marketing tenham noção e
+              acompanhem os resultados que foram obtidos até o momento presente,
+              analisando e pontuando o que está dando um retorno positivo e o que precisa ser melhorado, ou até mesmo
+              descartado.
+      
+      
+              </br>
+      
+              Pode-se obter respostas através de como está o engajamento dos conteúdos, se o engajamento for positivo
+              (quantidade satisfatória de likes,
+              comentários e compartilhamentos) significa que o conteúdo está sendo útil e cativante para o público. Se
+              o engajamento for negativo, significa que algo precisa ser melhorado.
+      
+      
+      
+            </li>
+      
+      
+          </p>
+    </div>
+      
+  
 
 
 
 
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="MKT.js"></script>
-
+</article>
+   <footer class="hero-button">
+    <a href="index.html">Voltar</a>
+   </footer>
+   
+  </main>
+    <script src="js.js"></script>
 </body>
-
 </html>
