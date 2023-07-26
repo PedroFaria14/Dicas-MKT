@@ -738,3 +738,7 @@ h1 i{
   .card-title{
     align-items: center;
   }
+
+  .botao-article I{
+    font-size: 1.5em;
+  }
